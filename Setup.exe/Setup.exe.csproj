@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Box2DX, Version=2.0.1.28279, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Box2DX.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox.Designer.cs">
+      <DependentUpon>DialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameForms\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameForms\Form_ActualInstallation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +116,9 @@
     <Compile Include="GameManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DialogBox.resx">
+      <DependentUpon>DialogBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_ActualInstallation.resx">
       <DependentUpon>Form_ActualInstallation.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_Welcome.resx">
       <DependentUpon>Form_Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForms\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -185,6 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\I.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Box2DX.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
