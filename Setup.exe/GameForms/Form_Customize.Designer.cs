@@ -70,7 +70,7 @@
             this.button_back.Name = "button_back";
             this.button_back.Size = new System.Drawing.Size(75, 23);
             this.button_back.TabIndex = 37;
-            this.button_back.Text = "Back";
+            this.button_back.Text = "< Back";
             this.button_back.UseVisualStyleBackColor = true;
             // 
             // button_next
@@ -79,7 +79,7 @@
             this.button_next.Name = "button_next";
             this.button_next.Size = new System.Drawing.Size(75, 23);
             this.button_next.TabIndex = 36;
-            this.button_next.Text = "Next";
+            this.button_next.Text = "Next >";
             this.button_next.UseVisualStyleBackColor = true;
             // 
             // label_description
