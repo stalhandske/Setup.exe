@@ -52,7 +52,7 @@ namespace Setup.exe.GameForms
 		private void StopUpdateThread()
 		{
 			_shouldStop = true;
-			_updateThread.Join();
+			//_updateThread.Join();
 		}
 	}
 }

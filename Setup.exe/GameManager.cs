@@ -39,13 +39,17 @@ namespace Setup.exe
 		public void NextEvent()
 		{
 			_currentEventIndex++;
-			if (_currentEventIndex == _events.Length) Application.Exit();
+			if (_currentEventIndex == _events.Length)
+			{
+				Application.Exit();
+				return;
+			}
 
 			_currentForm.Visible = false;
 			_currentForm.Close();
 			_currentForm = null;
 			GC.Collect();
-			var newForm = CreateForm(CurrentFormType);
+			_currentForm = CreateForm(CurrentFormType);
 			_currentForm.Show();
 		}
 
