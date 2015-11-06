@@ -73,7 +73,7 @@
             this.button_next.Name = "button_next";
             this.button_next.Size = new System.Drawing.Size(75, 23);
             this.button_next.TabIndex = 23;
-            this.button_next.Text = "Next >";
+            this.button_next.Text = "Install";
             this.button_next.UseVisualStyleBackColor = true;
             // 
             // label_description

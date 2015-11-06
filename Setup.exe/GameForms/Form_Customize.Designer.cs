@@ -138,11 +138,18 @@
             "Search Helper",
             "Windows Live ID Sign-up Helper",
             "Java 1.1",
+            "Main Program",
             "DirectX 6",
             "RedTube Toolbar",
             "xnxx Toolbar",
             "ilovethefishes.com Desktop Shortcut",
-            "lemonparty.com Desktop Shortcut"});
+            "lemonparty.com Desktop Shortcut",
+            "Adobe Flash",
+            "Micromedia Flash",
+            "Internet Exploder (Set as default)",
+            ".NET Framework 0.5",
+            "Unity Web Player",
+            "HTML5 stuff"});
             this.checkedListBox.Location = new System.Drawing.Point(192, 168);
             this.checkedListBox.Name = "checkedListBox";
             this.checkedListBox.Size = new System.Drawing.Size(272, 109);
@@ -153,11 +160,11 @@
             this.label_choose.AutoSize = true;
             this.label_choose.BackColor = System.Drawing.Color.Transparent;
             this.label_choose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_choose.Location = new System.Drawing.Point(8, 168);
+            this.label_choose.Location = new System.Drawing.Point(88, 168);
             this.label_choose.Name = "label_choose";
-            this.label_choose.Size = new System.Drawing.Size(179, 13);
+            this.label_choose.Size = new System.Drawing.Size(93, 13);
             this.label_choose.TabIndex = 35;
-            this.label_choose.Text = "Choose which components to install:";
+            this.label_choose.Text = "Additional options:";
             // 
             // label_diskUsage
             // 
@@ -176,7 +183,7 @@
             this.textBox_browse.Name = "textBox_browse";
             this.textBox_browse.Size = new System.Drawing.Size(296, 20);
             this.textBox_browse.TabIndex = 42;
-            this.textBox_browse.Text = "C:\\Program Files (x86)\\CyberBuddy\\";
+            this.textBox_browse.Text = "C:\\Program Files (x86)\\";
             this.textBox_browse.TextChanged += new System.EventHandler(this.textBox_browse_TextChanged);
             // 
             // groupBox

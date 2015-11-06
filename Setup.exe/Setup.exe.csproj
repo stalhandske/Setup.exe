@@ -58,6 +58,12 @@
     <Compile Include="GameForms\Form_Customize.Designer.cs">
       <DependentUpon>Form_Customize.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameForms\Form_Finish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\Form_Finish.Designer.cs">
+      <DependentUpon>Form_Finish.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameForms\Form_InstallationType.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_Customize.resx">
       <DependentUpon>Form_Customize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForms\Form_Finish.resx">
+      <DependentUpon>Form_Finish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_InstallationType.resx">
       <DependentUpon>Form_InstallationType.cs</DependentUpon>
