@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using Setup.exe.GameForms;
 
@@ -9,25 +9,25 @@ namespace Setup.exe
 	{
 		private static GameManager _instance;
 
-		private readonly Type[] _events =
+		private readonly List<Type> _events = new List<Type>
 		{
 			typeof (Form_Welcome),
 			typeof (Form_License),
-            typeof(Form_InstallationType),
-            typeof(Form_Customize),
-            typeof(Form_Summary),
-            typeof(Form_ActualInstallation),
-            typeof(Form_Finish)
+			typeof (Form_InstallationType),
+			typeof (Form_Customize),
+			typeof (Form_Summary),
+			typeof (Form_ActualInstallation),
+			typeof (Form_Finish)
 		};
+
+		private int _currentEventIndex;
+
+		private GameForm _currentForm;
 
 		public GameManager()
 		{
 			StartGame();
 		}
-
-		private int _currentEventIndex;
-
-		private GameForm _currentForm;
 
 		public static GameManager Instance => _instance ?? (_instance = new GameManager());
 
@@ -43,7 +43,19 @@ namespace Setup.exe
 		public void NextEvent()
 		{
 			_currentEventIndex++;
-			if (_currentEventIndex == _events.Length)
+			RefreshEvent();
+		}
+
+		public void GoToSpecific(Type formType)
+		{
+			_currentEventIndex = _events.IndexOf(formType);
+			RefreshEvent();
+		}
+
+		//This is called after the _currentEventIndex was modified
+		private void RefreshEvent()
+		{
+			if (_currentEventIndex >= _events.Count)
 			{
 				Application.Exit();
 				return;
@@ -54,8 +66,9 @@ namespace Setup.exe
 			_currentForm = null;
 			GC.Collect();
 			_currentForm = CreateForm(CurrentFormType);
-			 _currentForm.Show();
+			_currentForm.Show();
 		}
+
 
 		public GameForm CreateForm(Type type)
 		{
@@ -63,4 +76,3 @@ namespace Setup.exe
 		}
 	}
 }
- 
