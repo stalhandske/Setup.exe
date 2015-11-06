@@ -11,7 +11,7 @@ namespace Breakout
 		private volatile bool _shouldStop;
 
 		public GameForm()
-		{
+		{ 
 			
 		}
 
