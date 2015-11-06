@@ -27,7 +27,14 @@ namespace Setup.exe.GameForms
 		{
 			while (!_shouldStop)
 			{
-				Invoke(_updateAction);
+				try
+				{
+					Invoke(_updateAction);
+				}
+				catch
+				{
+					
+				}
 				Thread.Sleep(16);
 			}
 		}
