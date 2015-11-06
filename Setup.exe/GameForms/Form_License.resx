@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>A Type II supernova (plural: supernovae or supernovas) results from the rapid collapse and violent explosion of a massive star. A star must have at least 8 times, and no more than 40–50 times, the mass of the Sun (M☉) for this type of explosion.[1] It is distinguished from other types of supernovae by the presence of hydrogen in its spectrum. Type II supernovae are mainly observed in the spiral arms of galaxies and in H II regions, but not in elliptical galaxies.
+
+Stars generate energy by the nuclear fusion of elements. Unlike the Sun, massive stars possess the mass needed to fuse elements that have an atomic mass greater than hydrogen and helium, albeit at increasingly higher temperatures and pressures, causing increasingly shorter stellar life spans. The degeneracy pressure of electrons and the energy generated by these fusion reactions are sufficient to counter the force of gravity and prevent the star from collapsing, maintaining stellar equilibrium. The star fuses increasingly higher mass elements, starting with hydrogen and then helium, progressing up through the periodic table until a core of iron and nickel is produced. Fusion of iron or nickel produces no net energy output, so no further fusion can take place, leaving the nickel-iron core inert. Due to the lack of energy output allowing outward pressure, equilibrium is broken.
+
+When the mass of the inert core exceeds the Chandrasekhar limit of about 1.4 M☉, electron degeneracy alone is no longer sufficient to counter gravity and maintain stellar equilibrium. A cataclysmic implosion takes place within seconds, in which the outer core reaches an inward velocity of up to 23% of the speed of light and the inner core reaches temperatures of up to 100 billion kelvin. Neutrons and neutrinos are formed via reversed beta-decay, releasing about 1046 joules (100 foe) in a ten-second burst. The collapse is halted by neutron degeneracy, causing the implosion to rebound and bounce outward. The energy of this expanding shock wave is sufficient to accelerate the surrounding stellar material to escape velocity, forming a supernova explosion, while the shock wave and extremely high temperature and pressure briefly allow for the production of elements heavier than iron.[2] Depending on initial size of the star, the remnants of the core form a neutron star or a black hole. Because of the underlying mechanism, the resulting nova is also described as a core-collapse supernova.
+
+There exist several categories of Type II supernova explosions, which are categorized based on the resulting light curve—a graph of luminosity versus time—following the explosion. Type II-L supernovae show a steady (linear) decline of the light curve following the explosion, whereas Type II-P display a period of slower decline (a plateau) in their light curve followed by a normal decay. Type Ib and Ic supernovae are a type of core-collapse supernova for a massive star that has shed its outer envelope of hydrogen and (for Type Ic) helium. As a result, they appear to be lacking in these elements.</value>
+  </data>
+</root>

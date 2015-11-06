@@ -46,17 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameForms\Form_License.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\Form_License.Designer.cs">
+      <DependentUpon>Form_License.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameForms\Form_Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GameForms\Form_Welcome.Designer.cs">
       <DependentUpon>Form_Welcome.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameForm.cs">
+    <Compile Include="GameForms\GameForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GameManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GameForms\Form_License.resx">
+      <DependentUpon>Form_License.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_Welcome.resx">
       <DependentUpon>Form_Welcome.cs</DependentUpon>
     </EmbeddedResource>
