@@ -11,8 +11,13 @@ namespace Setup.exe
 
 		private readonly Type[] _events =
 		{
-			typeof (Form_ActualInstallation),
-			typeof (Form_License)
+			typeof (Form_Welcome),
+			typeof (Form_License),
+            typeof(Form_InstallationType),
+            typeof(Form_Customize),
+            typeof(Form_Summary),
+            typeof(Form_ActualInstallation),
+            typeof(Form_Finish)
 		};
 
 		public GameManager()
