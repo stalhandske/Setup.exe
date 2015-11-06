@@ -210,6 +210,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Box2DX.dll" />
+    <Content Include="Resources\Custom.png" />
+    <Content Include="Resources\Install.png" />
+    <Content Include="Resources\SupeCustom.png" />
+    <Content Include="Resources\Typical.png" />
     <None Include="Resources\Build9600%2816%29.ico" />
   </ItemGroup>
   <ItemGroup>
