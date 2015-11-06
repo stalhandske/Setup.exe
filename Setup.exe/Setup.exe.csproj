@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameForms\Form_InstallationType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\Form_InstallationType.Designer.cs">
+      <DependentUpon>Form_InstallationType.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameForms\Form_License.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     <Compile Include="GameManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GameForms\Form_InstallationType.resx">
+      <DependentUpon>Form_InstallationType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_License.resx">
       <DependentUpon>Form_License.cs</DependentUpon>
     </EmbeddedResource>

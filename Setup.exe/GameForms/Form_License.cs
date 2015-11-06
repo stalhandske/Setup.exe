@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Setup.exe.GameForms
 {
-    public partial class Form_License : Form
+    public partial class Form_License : GameForm
     {
         public Form_License()
         {

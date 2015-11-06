@@ -36,6 +36,13 @@
             this.label_title = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label_background = new System.Windows.Forms.Label();
+            this.label_choose = new System.Windows.Forms.Label();
+            this.radioButton_typical = new System.Windows.Forms.RadioButton();
+            this.radioButton_custom = new System.Windows.Forms.RadioButton();
+            this.radioButton_veryCustom = new System.Windows.Forms.RadioButton();
+            this.label_typical = new System.Windows.Forms.Label();
+            this.label_custom = new System.Windows.Forms.Label();
+            this.label_veryCustom = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -113,11 +120,91 @@
             this.label_background.Size = new System.Drawing.Size(486, 71);
             this.label_background.TabIndex = 26;
             // 
+            // label_choose
+            // 
+            this.label_choose.AutoSize = true;
+            this.label_choose.Location = new System.Drawing.Point(21, 88);
+            this.label_choose.Name = "label_choose";
+            this.label_choose.Size = new System.Drawing.Size(122, 13);
+            this.label_choose.TabIndex = 28;
+            this.label_choose.Text = "Please select setup type";
+            // 
+            // radioButton_typical
+            // 
+            this.radioButton_typical.AutoSize = true;
+            this.radioButton_typical.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_typical.Location = new System.Drawing.Point(24, 124);
+            this.radioButton_typical.Name = "radioButton_typical";
+            this.radioButton_typical.Size = new System.Drawing.Size(66, 17);
+            this.radioButton_typical.TabIndex = 29;
+            this.radioButton_typical.TabStop = true;
+            this.radioButton_typical.Text = "Typical";
+            this.radioButton_typical.UseVisualStyleBackColor = true;
+            this.radioButton_typical.CheckedChanged += new System.EventHandler(this.radioButton_typical_CheckedChanged);
+            // 
+            // radioButton_custom
+            // 
+            this.radioButton_custom.AutoSize = true;
+            this.radioButton_custom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_custom.Location = new System.Drawing.Point(24, 180);
+            this.radioButton_custom.Name = "radioButton_custom";
+            this.radioButton_custom.Size = new System.Drawing.Size(66, 17);
+            this.radioButton_custom.TabIndex = 30;
+            this.radioButton_custom.TabStop = true;
+            this.radioButton_custom.Text = "Custom";
+            this.radioButton_custom.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_veryCustom
+            // 
+            this.radioButton_veryCustom.AutoSize = true;
+            this.radioButton_veryCustom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_veryCustom.Location = new System.Drawing.Point(24, 236);
+            this.radioButton_veryCustom.Name = "radioButton_veryCustom";
+            this.radioButton_veryCustom.Size = new System.Drawing.Size(95, 17);
+            this.radioButton_veryCustom.TabIndex = 31;
+            this.radioButton_veryCustom.TabStop = true;
+            this.radioButton_veryCustom.Text = "Very Custom";
+            this.radioButton_veryCustom.UseVisualStyleBackColor = true;
+            // 
+            // label_typical
+            // 
+            this.label_typical.AutoSize = true;
+            this.label_typical.Location = new System.Drawing.Point(130, 128);
+            this.label_typical.Name = "label_typical";
+            this.label_typical.Size = new System.Drawing.Size(65, 13);
+            this.label_typical.TabIndex = 32;
+            this.label_typical.Text = "Bla bla bla...";
+            // 
+            // label_custom
+            // 
+            this.label_custom.AutoSize = true;
+            this.label_custom.Location = new System.Drawing.Point(130, 182);
+            this.label_custom.Name = "label_custom";
+            this.label_custom.Size = new System.Drawing.Size(65, 13);
+            this.label_custom.TabIndex = 32;
+            this.label_custom.Text = "Bla bla bla...";
+            // 
+            // label_veryCustom
+            // 
+            this.label_veryCustom.AutoSize = true;
+            this.label_veryCustom.Location = new System.Drawing.Point(130, 240);
+            this.label_veryCustom.Name = "label_veryCustom";
+            this.label_veryCustom.Size = new System.Drawing.Size(65, 13);
+            this.label_veryCustom.TabIndex = 32;
+            this.label_veryCustom.Text = "Bla bla bla...";
+            // 
             // Form_InstallationType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
+            this.Controls.Add(this.label_veryCustom);
+            this.Controls.Add(this.label_custom);
+            this.Controls.Add(this.label_typical);
+            this.Controls.Add(this.radioButton_veryCustom);
+            this.Controls.Add(this.radioButton_custom);
+            this.Controls.Add(this.radioButton_typical);
+            this.Controls.Add(this.label_choose);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_back);
@@ -142,5 +229,12 @@
         private System.Windows.Forms.Label label_title;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_background;
+        private System.Windows.Forms.Label label_choose;
+        private System.Windows.Forms.RadioButton radioButton_typical;
+        private System.Windows.Forms.RadioButton radioButton_custom;
+        private System.Windows.Forms.RadioButton radioButton_veryCustom;
+        private System.Windows.Forms.Label label_typical;
+        private System.Windows.Forms.Label label_custom;
+        private System.Windows.Forms.Label label_veryCustom;
     }
 }
