@@ -78,9 +78,10 @@
             this.label_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_description.Location = new System.Drawing.Point(222, 68);
             this.label_description.Name = "label_description";
-            this.label_description.Size = new System.Drawing.Size(146, 13);
+            this.label_description.Size = new System.Drawing.Size(209, 78);
             this.label_description.TabIndex = 56;
-            this.label_description.Text = "The setup wizard will install ...";
+            this.label_description.Text = "The setup wizard has successfully installed\r\n16 Toolbars\r\n31 Anti Adware Blockers" +
+    "\r\n52 Desktop Shortcuts\r\n\r\nDo you want to restart to complete setup?";
             // 
             // label_title
             // 
@@ -123,7 +124,7 @@
             // 
             this.radioButton_yes.AutoSize = true;
             this.radioButton_yes.BackColor = System.Drawing.Color.White;
-            this.radioButton_yes.Location = new System.Drawing.Point(224, 112);
+            this.radioButton_yes.Location = new System.Drawing.Point(224, 168);
             this.radioButton_yes.Name = "radioButton_yes";
             this.radioButton_yes.Size = new System.Drawing.Size(167, 17);
             this.radioButton_yes.TabIndex = 58;
@@ -134,7 +135,7 @@
             // radioButton_no
             // 
             this.radioButton_no.BackColor = System.Drawing.Color.White;
-            this.radioButton_no.Location = new System.Drawing.Point(224, 128);
+            this.radioButton_no.Location = new System.Drawing.Point(224, 184);
             this.radioButton_no.Name = "radioButton_no";
             this.radioButton_no.Size = new System.Drawing.Size(248, 56);
             this.radioButton_no.TabIndex = 58;
@@ -145,7 +146,7 @@
             // radioButton1
             // 
             this.radioButton1.BackColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(224, 176);
+            this.radioButton1.Location = new System.Drawing.Point(224, 232);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(248, 40);
             this.radioButton1.TabIndex = 58;

@@ -31,7 +31,7 @@ namespace Setup.exe.GameForms
         {
             if (radioButton_typical.Checked)
             {
-                // TODO: GOTO SUMMARY
+                GameManager.Instance.GoToSpecific(typeof(Form_Summary));
             }
             else
             {
