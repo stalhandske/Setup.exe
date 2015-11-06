@@ -40,6 +40,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton_agree = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button_cancel
@@ -77,9 +79,9 @@
             this.label_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_description.Location = new System.Drawing.Point(14, 34);
             this.label_description.Name = "label_description";
-            this.label_description.Size = new System.Drawing.Size(146, 13);
+            this.label_description.Size = new System.Drawing.Size(78, 13);
             this.label_description.TabIndex = 11;
-            this.label_description.Text = "The setup wizard will install ...";
+            this.label_description.Text = "Please agree...";
             // 
             // label_title
             // 
@@ -88,9 +90,9 @@
             this.label_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.Location = new System.Drawing.Point(12, 9);
             this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(189, 25);
+            this.label_title.Size = new System.Drawing.Size(267, 25);
             this.label_title.TabIndex = 10;
-            this.label_title.Text = "Welcome to setup ...";
+            this.label_title.Text = "End User License Agreement";
             // 
             // label1
             // 
@@ -150,11 +152,22 @@
             this.radioButton1.Text = "I disagree with the terms of the license agreement";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::Setup.exe.Properties.Resources.Welcome1;
+            this.pictureBox1.Location = new System.Drawing.Point(360, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 72);
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form_License
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.radioButton_agree);
             this.Controls.Add(this.textBox1);
@@ -168,6 +181,7 @@
             this.Controls.Add(this.label_background);
             this.Name = "Form_License";
             this.Text = "Setup";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,5 +200,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RadioButton radioButton_agree;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

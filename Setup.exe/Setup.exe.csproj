@@ -210,6 +210,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Box2DX.dll" />
+    <None Include="Resources\Build9600%2816%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Finish.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

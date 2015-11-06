@@ -43,7 +43,9 @@
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.button_browse = new System.Windows.Forms.Button();
             this.textBox_browse = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // checkedListBox
@@ -223,11 +225,22 @@
             this.textBox_browse.Text = "C:\\Program Files (x86)\\";
             this.textBox_browse.TextChanged += new System.EventHandler(this.textBox_browse_TextChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::Setup.exe.Properties.Resources.Welcome1;
+            this.pictureBox1.Location = new System.Drawing.Point(360, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 72);
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form_Customize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.checkedListBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button_cancel);
@@ -245,6 +258,7 @@
             this.Text = "Setup";
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +280,6 @@
         private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.Button button_browse;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

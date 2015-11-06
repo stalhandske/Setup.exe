@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Welcome));
-            this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label_title = new System.Windows.Forms.Label();
             this.label_description = new System.Windows.Forms.Label();
@@ -38,17 +37,9 @@
             this.button_cancel = new System.Windows.Forms.Button();
             this.label_background = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox_logo
-            // 
-            this.pictureBox_logo.Image = global::Setup.exe.Properties.Resources.welcome;
-            this.pictureBox_logo.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox_logo.Name = "pictureBox_logo";
-            this.pictureBox_logo.Size = new System.Drawing.Size(200, 312);
-            this.pictureBox_logo.TabIndex = 0;
-            this.pictureBox_logo.TabStop = false;
             // 
             // label1
             // 
@@ -66,9 +57,9 @@
             this.label_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.Location = new System.Drawing.Point(222, 16);
             this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(211, 25);
+            this.label_title.Size = new System.Drawing.Size(179, 25);
             this.label_title.TabIndex = 2;
-            this.label_title.Text = "Welcome to the Setup!";
+            this.label_title.Text = "Welcome to Setup!";
             // 
             // label_description
             // 
@@ -127,6 +118,15 @@
             this.label2.TabIndex = 3;
             this.label2.Text = resources.GetString("label2.Text");
             // 
+            // pictureBox_logo
+            // 
+            this.pictureBox_logo.Image = global::Setup.exe.Properties.Resources.Welcome2;
+            this.pictureBox_logo.Location = new System.Drawing.Point(8, 0);
+            this.pictureBox_logo.Name = "pictureBox_logo";
+            this.pictureBox_logo.Size = new System.Drawing.Size(192, 312);
+            this.pictureBox_logo.TabIndex = 0;
+            this.pictureBox_logo.TabStop = false;
+            // 
             // Form_Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,6 +143,7 @@
             this.Controls.Add(this.label_background);
             this.Name = "Form_Welcome";
             this.Text = "Setup";
+            this.Load += new System.EventHandler(this.Form_Welcome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

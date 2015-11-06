@@ -104,10 +104,10 @@
             // 
             // pictureBox_logo
             // 
-            this.pictureBox_logo.Image = global::Setup.exe.Properties.Resources.welcome;
-            this.pictureBox_logo.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_logo.Image = global::Setup.exe.Properties.Resources.Finish;
+            this.pictureBox_logo.Location = new System.Drawing.Point(8, 8);
             this.pictureBox_logo.Name = "pictureBox_logo";
-            this.pictureBox_logo.Size = new System.Drawing.Size(200, 312);
+            this.pictureBox_logo.Size = new System.Drawing.Size(192, 288);
             this.pictureBox_logo.TabIndex = 53;
             this.pictureBox_logo.TabStop = false;
             // 

@@ -154,4 +154,28 @@
   <data name="I" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\I.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Build9600_16_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Build9600(16).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Welcome1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Welcome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Welcome2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Welcome2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Custom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Custom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Finish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Install" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Install.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SupeCustom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SupeCustom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Typical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Typical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

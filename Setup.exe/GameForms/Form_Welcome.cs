@@ -21,5 +21,10 @@ namespace Setup.exe.GameForms
         {
             GameManager.Instance.NextEvent();
         }
+
+        private void Form_Welcome_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
