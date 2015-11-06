@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Setup.exe.GameForms
 {
-    public partial class Form_Customize : Form
+    public partial class Form_Customize : GameForm
     {
         public Form_Customize()
         {
             InitializeComponent();
+        }
+
+        private void textBox_browse_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_browse_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

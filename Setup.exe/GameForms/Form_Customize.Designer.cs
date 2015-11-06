@@ -28,13 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label_veryCustom = new System.Windows.Forms.Label();
-            this.label_custom = new System.Windows.Forms.Label();
-            this.label_typical = new System.Windows.Forms.Label();
-            this.radioButton_veryCustom = new System.Windows.Forms.RadioButton();
-            this.radioButton_custom = new System.Windows.Forms.RadioButton();
-            this.radioButton_typical = new System.Windows.Forms.RadioButton();
-            this.label_choose = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button_cancel = new System.Windows.Forms.Button();
             this.button_back = new System.Windows.Forms.Button();
@@ -43,79 +36,15 @@
             this.label_title = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label_background = new System.Windows.Forms.Label();
+            this.checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.label_choose = new System.Windows.Forms.Label();
+            this.label_diskUsage = new System.Windows.Forms.Label();
+            this.textBox_browse = new System.Windows.Forms.TextBox();
+            this.groupBox = new System.Windows.Forms.GroupBox();
+            this.button_browse = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label_veryCustom
-            // 
-            this.label_veryCustom.AutoSize = true;
-            this.label_veryCustom.Location = new System.Drawing.Point(130, 240);
-            this.label_veryCustom.Name = "label_veryCustom";
-            this.label_veryCustom.Size = new System.Drawing.Size(65, 13);
-            this.label_veryCustom.TabIndex = 45;
-            this.label_veryCustom.Text = "Bla bla bla...";
-            // 
-            // label_custom
-            // 
-            this.label_custom.AutoSize = true;
-            this.label_custom.Location = new System.Drawing.Point(130, 182);
-            this.label_custom.Name = "label_custom";
-            this.label_custom.Size = new System.Drawing.Size(65, 13);
-            this.label_custom.TabIndex = 46;
-            this.label_custom.Text = "Bla bla bla...";
-            // 
-            // label_typical
-            // 
-            this.label_typical.AutoSize = true;
-            this.label_typical.Location = new System.Drawing.Point(130, 128);
-            this.label_typical.Name = "label_typical";
-            this.label_typical.Size = new System.Drawing.Size(65, 13);
-            this.label_typical.TabIndex = 47;
-            this.label_typical.Text = "Bla bla bla...";
-            // 
-            // radioButton_veryCustom
-            // 
-            this.radioButton_veryCustom.AutoSize = true;
-            this.radioButton_veryCustom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_veryCustom.Location = new System.Drawing.Point(24, 236);
-            this.radioButton_veryCustom.Name = "radioButton_veryCustom";
-            this.radioButton_veryCustom.Size = new System.Drawing.Size(95, 17);
-            this.radioButton_veryCustom.TabIndex = 44;
-            this.radioButton_veryCustom.TabStop = true;
-            this.radioButton_veryCustom.Text = "Very Custom";
-            this.radioButton_veryCustom.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_custom
-            // 
-            this.radioButton_custom.AutoSize = true;
-            this.radioButton_custom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_custom.Location = new System.Drawing.Point(24, 180);
-            this.radioButton_custom.Name = "radioButton_custom";
-            this.radioButton_custom.Size = new System.Drawing.Size(66, 17);
-            this.radioButton_custom.TabIndex = 43;
-            this.radioButton_custom.TabStop = true;
-            this.radioButton_custom.Text = "Custom";
-            this.radioButton_custom.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_typical
-            // 
-            this.radioButton_typical.AutoSize = true;
-            this.radioButton_typical.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_typical.Location = new System.Drawing.Point(24, 124);
-            this.radioButton_typical.Name = "radioButton_typical";
-            this.radioButton_typical.Size = new System.Drawing.Size(66, 17);
-            this.radioButton_typical.TabIndex = 42;
-            this.radioButton_typical.TabStop = true;
-            this.radioButton_typical.Text = "Typical";
-            this.radioButton_typical.UseVisualStyleBackColor = true;
-            // 
-            // label_choose
-            // 
-            this.label_choose.AutoSize = true;
-            this.label_choose.Location = new System.Drawing.Point(21, 88);
-            this.label_choose.Name = "label_choose";
-            this.label_choose.Size = new System.Drawing.Size(122, 13);
-            this.label_choose.TabIndex = 41;
-            this.label_choose.Text = "Please select setup type";
             // 
             // label2
             // 
@@ -192,42 +121,121 @@
             this.label_background.Size = new System.Drawing.Size(486, 71);
             this.label_background.TabIndex = 39;
             // 
+            // checkedListBox
+            // 
+            this.checkedListBox.FormattingEnabled = true;
+            this.checkedListBox.Items.AddRange(new object[] {
+            "ASK Toolbar",
+            "Google Toolbar",
+            "Yahoo! Toolbar",
+            "BING Toolbar",
+            "Babylon Toolbar",
+            "Altavista Toolbar",
+            "Adware Block",
+            "Spyware Remover (Free)",
+            "Trojan",
+            "Search Helper",
+            "Windows Live ID Sign-up Helper",
+            "Java 1.1",
+            "DirectX 6"});
+            this.checkedListBox.Location = new System.Drawing.Point(192, 168);
+            this.checkedListBox.Name = "checkedListBox";
+            this.checkedListBox.Size = new System.Drawing.Size(272, 109);
+            this.checkedListBox.TabIndex = 41;
+            // 
+            // label_choose
+            // 
+            this.label_choose.AutoSize = true;
+            this.label_choose.BackColor = System.Drawing.Color.Transparent;
+            this.label_choose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_choose.Location = new System.Drawing.Point(8, 168);
+            this.label_choose.Name = "label_choose";
+            this.label_choose.Size = new System.Drawing.Size(179, 13);
+            this.label_choose.TabIndex = 35;
+            this.label_choose.Text = "Choose which components to install:";
+            // 
+            // label_diskUsage
+            // 
+            this.label_diskUsage.AutoSize = true;
+            this.label_diskUsage.BackColor = System.Drawing.Color.Transparent;
+            this.label_diskUsage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_diskUsage.Location = new System.Drawing.Point(8, 264);
+            this.label_diskUsage.Name = "label_diskUsage";
+            this.label_diskUsage.Size = new System.Drawing.Size(137, 13);
+            this.label_diskUsage.TabIndex = 35;
+            this.label_diskUsage.Text = "Space Required: 43GB";
+            // 
+            // textBox_browse
+            // 
+            this.textBox_browse.Location = new System.Drawing.Point(16, 24);
+            this.textBox_browse.Name = "textBox_browse";
+            this.textBox_browse.Size = new System.Drawing.Size(296, 20);
+            this.textBox_browse.TabIndex = 42;
+            this.textBox_browse.Text = "C:\\Program Files (x86)\\CyberBuddy\\";
+            this.textBox_browse.TextChanged += new System.EventHandler(this.textBox_browse_TextChanged);
+            // 
+            // groupBox
+            // 
+            this.groupBox.Controls.Add(this.button_browse);
+            this.groupBox.Controls.Add(this.textBox_browse);
+            this.groupBox.Location = new System.Drawing.Point(24, 92);
+            this.groupBox.Name = "groupBox";
+            this.groupBox.Size = new System.Drawing.Size(432, 56);
+            this.groupBox.TabIndex = 43;
+            this.groupBox.TabStop = false;
+            this.groupBox.Text = "Destination Folder";
+            this.groupBox.Enter += new System.EventHandler(this.groupBox_Enter);
+            // 
+            // button_browse
+            // 
+            this.button_browse.Location = new System.Drawing.Point(328, 22);
+            this.button_browse.Name = "button_browse";
+            this.button_browse.Size = new System.Drawing.Size(75, 23);
+            this.button_browse.TabIndex = 44;
+            this.button_browse.Text = "Browse...";
+            this.button_browse.UseVisualStyleBackColor = true;
+            this.button_browse.Click += new System.EventHandler(this.button_browse_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(8, 248);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 13);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Space Available: 23GB";
+            // 
             // Form_Customize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
-            this.Controls.Add(this.label_veryCustom);
-            this.Controls.Add(this.label_custom);
-            this.Controls.Add(this.label_typical);
-            this.Controls.Add(this.radioButton_veryCustom);
-            this.Controls.Add(this.radioButton_custom);
-            this.Controls.Add(this.radioButton_typical);
-            this.Controls.Add(this.label_choose);
+            this.Controls.Add(this.checkedListBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_back);
             this.Controls.Add(this.button_next);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label_diskUsage);
+            this.Controls.Add(this.label_choose);
             this.Controls.Add(this.label_description);
             this.Controls.Add(this.label_title);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_background);
+            this.Controls.Add(this.groupBox);
             this.Name = "Form_Customize";
             this.Text = "Setup";
+            this.groupBox.ResumeLayout(false);
+            this.groupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label_veryCustom;
-        private System.Windows.Forms.Label label_custom;
-        private System.Windows.Forms.Label label_typical;
-        private System.Windows.Forms.RadioButton radioButton_veryCustom;
-        private System.Windows.Forms.RadioButton radioButton_custom;
-        private System.Windows.Forms.RadioButton radioButton_typical;
-        private System.Windows.Forms.Label label_choose;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.Button button_back;
@@ -236,5 +244,12 @@
         private System.Windows.Forms.Label label_title;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_background;
+        private System.Windows.Forms.CheckedListBox checkedListBox;
+        private System.Windows.Forms.Label label_choose;
+        private System.Windows.Forms.Label label_diskUsage;
+        private System.Windows.Forms.TextBox textBox_browse;
+        private System.Windows.Forms.GroupBox groupBox;
+        private System.Windows.Forms.Button button_browse;
+        private System.Windows.Forms.Label label3;
     }
 }
