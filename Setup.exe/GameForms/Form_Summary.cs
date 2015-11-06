@@ -21,5 +21,10 @@ namespace Setup.exe.GameForms
         {
 
         }
+
+        private void button_next_Click(object sender, EventArgs e)
+        {
+            GameManager.Instance.NextEvent();
+        }
     }
 }

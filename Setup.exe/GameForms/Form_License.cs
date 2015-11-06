@@ -12,6 +12,8 @@ namespace Setup.exe.GameForms
 {
     public partial class Form_License : GameForm
     {
+        bool firstNext = true;
+
         public Form_License()
         {
             InitializeComponent();
@@ -19,7 +21,16 @@ namespace Setup.exe.GameForms
 
         private void button_next_Click(object sender, EventArgs e)
         {
-
+            if (firstNext)
+            {
+                // INSERT NEW LICENSE AGREEMENT HERE
+                firstNext = false;
+            }
+            else
+            {
+                GameManager.Instance.NextEvent();
+            }
+        
         }
     }
 }

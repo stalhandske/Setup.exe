@@ -75,6 +75,7 @@
             this.button_next.TabIndex = 23;
             this.button_next.Text = "Install";
             this.button_next.UseVisualStyleBackColor = true;
+            this.button_next.Click += new System.EventHandler(this.button_next_Click);
             // 
             // label_description
             // 

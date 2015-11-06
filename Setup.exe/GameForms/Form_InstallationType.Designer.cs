@@ -80,6 +80,7 @@
             this.button_next.TabIndex = 23;
             this.button_next.Text = "Next >";
             this.button_next.UseVisualStyleBackColor = true;
+            this.button_next.Click += new System.EventHandler(this.button_next_Click);
             // 
             // label_description
             // 
@@ -132,6 +133,7 @@
             // radioButton_typical
             // 
             this.radioButton_typical.AutoSize = true;
+            this.radioButton_typical.Checked = true;
             this.radioButton_typical.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_typical.Location = new System.Drawing.Point(24, 124);
             this.radioButton_typical.Name = "radioButton_typical";

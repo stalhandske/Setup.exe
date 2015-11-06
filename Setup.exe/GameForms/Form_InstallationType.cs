@@ -26,5 +26,17 @@ namespace Setup.exe.GameForms
         {
 
         }
+
+        private void button_next_Click(object sender, EventArgs e)
+        {
+            if (radioButton_typical.Checked)
+            {
+                // TODO: GOTO SUMMARY
+            }
+            else
+            {
+                GameManager.Instance.NextEvent();
+            }
+        }
     }
 }

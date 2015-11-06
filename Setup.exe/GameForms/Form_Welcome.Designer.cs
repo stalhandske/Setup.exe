@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Welcome));
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label_title = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.button_back = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
             this.label_background = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,20 +66,19 @@
             this.label_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.Location = new System.Drawing.Point(222, 16);
             this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(189, 25);
+            this.label_title.Size = new System.Drawing.Size(211, 25);
             this.label_title.TabIndex = 2;
-            this.label_title.Text = "Welcome to setup ...";
+            this.label_title.Text = "Welcome to the Setup!";
             // 
             // label_description
             // 
-            this.label_description.AutoSize = true;
             this.label_description.BackColor = System.Drawing.Color.White;
             this.label_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_description.Location = new System.Drawing.Point(222, 68);
+            this.label_description.Location = new System.Drawing.Point(224, 64);
             this.label_description.Name = "label_description";
-            this.label_description.Size = new System.Drawing.Size(146, 13);
+            this.label_description.Size = new System.Drawing.Size(218, 16);
             this.label_description.TabIndex = 3;
-            this.label_description.Text = "The setup wizard will install ...";
+            this.label_description.Text = "Dear Customer";
             // 
             // button_next
             // 
@@ -116,6 +117,16 @@
             this.label_background.Size = new System.Drawing.Size(287, 312);
             this.label_background.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(224, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(248, 152);
+            this.label2.TabIndex = 3;
+            this.label2.Text = resources.GetString("label2.Text");
+            // 
             // Form_Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,6 +135,7 @@
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_back);
             this.Controls.Add(this.button_next);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label_description);
             this.Controls.Add(this.label_title);
             this.Controls.Add(this.label1);
@@ -147,5 +159,6 @@
         private System.Windows.Forms.Button button_back;
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.Label label_background;
+        private System.Windows.Forms.Label label2;
     }
 }

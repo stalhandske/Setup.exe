@@ -31,5 +31,15 @@ namespace Setup.exe.GameForms
         {
 
         }
+
+        private void button_next_Click(object sender, EventArgs e)
+        {
+            GameManager.Instance.NextEvent();
+        }
+
+        private void checkedListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
