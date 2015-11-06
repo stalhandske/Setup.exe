@@ -8,13 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Setup.exe
+
+public partial class Form1 : GameForm
 {
-	public partial class Form1 : Form
+	public Form1()
 	{
-		public Form1()
-		{
-			InitializeComponent();
-		}
+		InitializeComponent();
 	}
 }
+

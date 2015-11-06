@@ -2,57 +2,54 @@
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Breakout
+public class GameForm : Form
 {
-	public class GameForm : Form
-	{
-		private readonly Action _updateAction;
-		private Thread _updateThread;
-		private volatile bool _shouldStop;
+	private readonly Action _updateAction;
+	private Thread _updateThread;
+	private volatile bool _shouldStop;
 
-		public GameForm()
-		{ 
+	public GameForm()
+	{ 
 			
-		}
+	}
 
-		//Set the update function directly in the constructor.
-		public GameForm(Action updateAction)
-		{
-			_updateAction = updateAction;
-		}
+	//Set the update function directly in the constructor.
+	public GameForm(Action updateAction)
+	{
+		_updateAction = updateAction;
+	}
 
-		public void SetupUpdateThread()
-		{
-			_updateThread = new Thread(DoUpdate);
-			_updateThread.Start();
-		}
+	public void SetupUpdateThread()
+	{
+		_updateThread = new Thread(DoUpdate);
+		_updateThread.Start();
+	}
 
-		private void DoUpdate()
+	private void DoUpdate()
+	{
+		while (!_shouldStop)
 		{
-			while (!_shouldStop)
+			try
 			{
-				try
-				{
-					Invoke(_updateAction);
-				}
-				catch
-				{
-					Console.WriteLine("Exeption caught in Update Action");
-				}
-				Thread.Sleep(16);
+				Invoke(_updateAction);
 			}
+			catch
+			{
+				Console.WriteLine("Exeption caught in Update Action");
+			}
+			Thread.Sleep(16);
 		}
+	}
 
-		protected override void OnFormClosed(FormClosedEventArgs e)
-		{
-			StopUpdateThread();
-			base.OnFormClosed(e);
-		}
+	protected override void OnFormClosed(FormClosedEventArgs e)
+	{
+		StopUpdateThread();
+		base.OnFormClosed(e);
+	}
 
-		private void StopUpdateThread()
-		{
-			_shouldStop = true;
-			_updateThread.Join();
-		}
+	private void StopUpdateThread()
+	{
+		_shouldStop = true;
+		_updateThread.Join();
 	}
 }
