@@ -13,10 +13,11 @@ namespace Setup.exe.GameForms
 
 		public GameForm()
 		{
-			_updateAction=Update;
+			_updateAction=OnGameUpdate;
+			//SetupUpdateThread();
 		}
 
-		private void SetupUpdateThread()
+		public void SetupUpdateThread()
 		{
 			_updateThread = new Thread(DoUpdate);
 			_updateThread.Start();
@@ -26,14 +27,7 @@ namespace Setup.exe.GameForms
 		{
 			while (!_shouldStop)
 			{
-				try
-				{
-					Invoke(_updateAction);
-				}
-				catch
-				{
-					Console.WriteLine("Exeption caught in Update Action");
-				}
+				Invoke(_updateAction);
 				Thread.Sleep(16);
 			}
 		}

@@ -28,50 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button_cancel = new System.Windows.Forms.Button();
-            this.label_description = new System.Windows.Forms.Label();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.SuspendLayout();
-            // 
-            // button_cancel
-            // 
-            this.button_cancel.Location = new System.Drawing.Point(280, 64);
-            this.button_cancel.Name = "button_cancel";
-            this.button_cancel.Size = new System.Drawing.Size(75, 23);
-            this.button_cancel.TabIndex = 53;
-            this.button_cancel.Text = "Cancel";
-            this.button_cancel.UseVisualStyleBackColor = true;
-            // 
-            // label_description
-            // 
-            this.label_description.AutoSize = true;
-            this.label_description.BackColor = System.Drawing.Color.Transparent;
-            this.label_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_description.Location = new System.Drawing.Point(16, 16);
-            this.label_description.Name = "label_description";
-            this.label_description.Size = new System.Drawing.Size(116, 13);
-            this.label_description.TabIndex = 50;
-            this.label_description.Text = "Installing ASK toolbar...";
-            // 
-            // progressBar
-            // 
-            this.progressBar.Location = new System.Drawing.Point(16, 64);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(248, 23);
-            this.progressBar.TabIndex = 54;
-            // 
-            // Form_ActualInstallation
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 99);
-            this.Controls.Add(this.progressBar);
-            this.Controls.Add(this.button_cancel);
-            this.Controls.Add(this.label_description);
-            this.Name = "Form_ActualInstallation";
-            this.Text = "Setup";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.button_cancel = new System.Windows.Forms.Button();
+			this.label_description = new System.Windows.Forms.Label();
+			this.progressBar = new System.Windows.Forms.ProgressBar();
+			this.SuspendLayout();
+			// 
+			// button_cancel
+			// 
+			this.button_cancel.Location = new System.Drawing.Point(280, 64);
+			this.button_cancel.Name = "button_cancel";
+			this.button_cancel.Size = new System.Drawing.Size(75, 23);
+			this.button_cancel.TabIndex = 53;
+			this.button_cancel.Text = "Cancel";
+			this.button_cancel.UseVisualStyleBackColor = true;
+			this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
+			// 
+			// label_description
+			// 
+			this.label_description.AutoSize = true;
+			this.label_description.BackColor = System.Drawing.Color.Transparent;
+			this.label_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label_description.Location = new System.Drawing.Point(16, 16);
+			this.label_description.Name = "label_description";
+			this.label_description.Size = new System.Drawing.Size(141, 13);
+			this.label_description.TabIndex = 50;
+			this.label_description.Text = "Installing ASK toolbar...";
+			// 
+			// progressBar
+			// 
+			this.progressBar.Location = new System.Drawing.Point(16, 64);
+			this.progressBar.Maximum = 10000;
+			this.progressBar.Name = "progressBar";
+			this.progressBar.Size = new System.Drawing.Size(248, 23);
+			this.progressBar.TabIndex = 54;
+			// 
+			// Form_ActualInstallation
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(370, 99);
+			this.Controls.Add(this.progressBar);
+			this.Controls.Add(this.button_cancel);
+			this.Controls.Add(this.label_description);
+			this.Name = "Form_ActualInstallation";
+			this.Text = "Hold On";
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 

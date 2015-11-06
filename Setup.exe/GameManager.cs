@@ -1,32 +1,30 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 using Setup.exe.GameForms;
 
 namespace Setup.exe
 {
-	public class GameManager
+	public class GameManager : ApplicationContext
 	{
 		private static GameManager _instance;
 
 		private readonly Type[] _events =
 		{
-			typeof (Form_Welcome),
-			typeof(Form_Welcome)
+			typeof (Form_ActualInstallation),
+			typeof (Form_License)
 		};
+
+		public GameManager()
+		{
+			StartGame();
+		}
 
 		private int _currentEventIndex;
 
 		private GameForm _currentForm;
 
-		public static GameManager Instance
-		{
-			get
-			{
-				if (_instance == null)
-					_instance = new GameManager();
-				return _instance;
-			}
-		}
+		public static GameManager Instance => _instance ?? (_instance = new GameManager());
 
 		private Type CurrentFormType => _events[_currentEventIndex];
 
@@ -34,6 +32,7 @@ namespace Setup.exe
 		{
 			_currentForm = CreateForm(CurrentFormType);
 			_currentForm.Show();
+			_currentForm.SetupUpdateThread();
 		}
 
 		public void NextEvent()
@@ -50,7 +49,7 @@ namespace Setup.exe
 			_currentForm = null;
 			GC.Collect();
 			_currentForm = CreateForm(CurrentFormType);
-			_currentForm.Show();
+			 _currentForm.Show();
 		}
 
 		public GameForm CreateForm(Type type)
@@ -59,3 +58,4 @@ namespace Setup.exe
 		}
 	}
 }
+ 
