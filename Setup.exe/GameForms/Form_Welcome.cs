@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Setup.exe
+namespace Setup.exe.GameForms
 {
     public partial class Form_Welcome : GameForm
     {

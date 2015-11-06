@@ -1,4 +1,4 @@
-﻿namespace Setup.exe
+﻿namespace Setup.exe.GameForms
 {
     partial class Form_Welcome
     {
