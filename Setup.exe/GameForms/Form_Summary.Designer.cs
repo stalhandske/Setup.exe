@@ -155,6 +155,7 @@
             this.Controls.Add(this.label_title);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_background);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_Summary";
             this.Text = "Form_Summary";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

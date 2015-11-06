@@ -56,6 +56,12 @@
     <Compile Include="DialogBox.Designer.cs">
       <DependentUpon>DialogBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameForms\Form_OSWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\Form_OSWarning.Designer.cs">
+      <DependentUpon>Form_OSWarning.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameForms\TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_License.resx">
       <DependentUpon>Form_License.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForms\Form_OSWarning.resx">
+      <DependentUpon>Form_OSWarning.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_Popup.resx">
       <DependentUpon>Form_Popup.cs</DependentUpon>
@@ -214,6 +223,7 @@
     <Content Include="Resources\Install.png" />
     <Content Include="Resources\SupeCustom.png" />
     <Content Include="Resources\Typical.png" />
+    <None Include="Resources\WindowsWarning.png" />
     <None Include="Resources\Build9600%2816%29.ico" />
   </ItemGroup>
   <ItemGroup>

@@ -141,6 +141,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox_logo);
             this.Controls.Add(this.label_background);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_Welcome";
             this.Text = "Setup";
             this.Load += new System.EventHandler(this.Form_Welcome_Load);

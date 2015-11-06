@@ -254,6 +254,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_background);
             this.Controls.Add(this.groupBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_Customize";
             this.Text = "Setup";
             this.groupBox.ResumeLayout(false);

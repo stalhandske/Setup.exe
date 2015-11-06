@@ -69,6 +69,7 @@
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.button_OK);
             this.Controls.Add(this.label_text);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_Popup";
             this.Text = "Message";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();

@@ -181,6 +181,7 @@
             this.Controls.Add(this.button_back);
             this.Controls.Add(this.button_next);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_Finish";
             this.Text = "Setup";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();

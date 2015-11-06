@@ -82,6 +82,7 @@
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.label_description);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_ActualInstallation";
             this.Text = "Hold On";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

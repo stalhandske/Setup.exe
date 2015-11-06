@@ -12,6 +12,7 @@ namespace Setup.exe
 
 		private readonly List<Type> _events = new List<Type>
 		{
+            typeof(Form_OSWarning),
 			typeof (Form_Welcome),
 			typeof (Form_License),
 			typeof (Form_InstallationType),

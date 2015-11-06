@@ -249,5 +249,15 @@ namespace Setup.exe.Properties {
                 return ResourceManager.GetStream("Windows_Startup", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WindowsWarning {
+            get {
+                object obj = ResourceManager.GetObject("WindowsWarning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
