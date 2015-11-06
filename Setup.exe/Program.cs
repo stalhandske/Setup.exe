@@ -17,7 +17,8 @@ namespace Setup.exe
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form_Welcome());
+			GameManager.Instance.StartGame();
+			Application.Run();
 		}
 	}
 }
