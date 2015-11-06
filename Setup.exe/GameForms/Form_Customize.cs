@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Setup.exe.GameForms
 {
-    public partial class Form_InstallationType : GameForm
+    public partial class Form_Customize : Form
     {
-        public Form_InstallationType()
+        public Form_Customize()
         {
             InitializeComponent();
-        }
-
-        private void radioButton_typical_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
