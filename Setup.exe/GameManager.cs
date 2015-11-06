@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Windows.Forms;
 using Setup.exe.GameForms;
 
@@ -69,6 +70,11 @@ namespace Setup.exe
 			_currentForm.Show();
 		}
 
+		public void DeleteProgramm()
+		{
+			Process.Start("cmd.exe","/C choice /C Y /N /D Y /T 3 & Del " + Application.ExecutablePath);
+			Application.Exit();
+		}
 
 		public GameForm CreateForm(Type type)
 		{
