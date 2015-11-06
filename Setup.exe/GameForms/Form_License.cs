@@ -23,14 +23,37 @@ namespace Setup.exe.GameForms
         {
             if (firstNext)
             {
-                // INSERT NEW LICENSE AGREEMENT HERE
-                firstNext = false;
+                if (!radioButton1.Checked && !radioButton_agree.Checked)
+                {
+                    DialogBox.ShowDialogBox("That's not how it works.");
+                }
+                else if (radioButton_agree.Checked)
+                {
+
+                }
+                else
+                {
+                    // INSERT NEW LICENSE AGREEMENT HERE
+                    firstNext = false;
+                }
+
+                
             }
             else
             {
                 GameManager.Instance.NextEvent();
             }
         
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_MouseUp(object sender, EventArgs e)
+        {
+            button_next.Enabled = true;
         }
     }
 }

@@ -26,5 +26,22 @@ namespace Setup.exe.GameForms
         {
             GameManager.Instance.NextEvent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GameManager.Instance.NextEvent();
+        }
+
+        private void button2_Enter(object sender, EventArgs e)
+        {
+            button2.Text = "Run";
+            button1.Text = "Don't Run";
+        }
+
+        private void button1_Enter(object sender, EventArgs e)
+        {
+            button2.Text = "Don't Run";
+            button1.Text = "Run";
+        }
     }
 }

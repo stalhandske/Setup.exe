@@ -64,6 +64,7 @@
             // 
             // button_next
             // 
+            this.button_next.Enabled = false;
             this.button_next.Location = new System.Drawing.Point(295, 327);
             this.button_next.Name = "button_next";
             this.button_next.Size = new System.Drawing.Size(75, 23);
@@ -129,6 +130,8 @@
             this.textBox1.Size = new System.Drawing.Size(460, 168);
             this.textBox1.TabIndex = 17;
             this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Click += new System.EventHandler(this.textBox1_MouseUp);
             // 
             // radioButton_agree
             // 

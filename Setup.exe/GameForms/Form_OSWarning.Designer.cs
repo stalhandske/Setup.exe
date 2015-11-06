@@ -87,6 +87,7 @@
             this.button1.Text = "Run";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.button1_Enter);
             // 
             // button2
             // 
@@ -96,6 +97,8 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Don\'t Run";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseEnter += new System.EventHandler(this.button2_Enter);
             // 
             // Form_OSWarning
             // 
