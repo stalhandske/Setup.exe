@@ -86,6 +86,36 @@
   <ItemGroup>
     <None Include="Resources\Sundown.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Pop 1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Pop 2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Popup.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Startup.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Error.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F - Windows Pop 2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F - Windows Popup.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F - Windows Startup.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F - Windows Error.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F - Windows Pop 1.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
