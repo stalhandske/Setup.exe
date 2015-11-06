@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameForms\Form_ActualInstallation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\Form_ActualInstallation.Designer.cs">
+      <DependentUpon>Form_ActualInstallation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameForms\Form_Customize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\Form_Customize.Designer.cs">
+      <DependentUpon>Form_Customize.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameForms\Form_InstallationType.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +69,18 @@
     </Compile>
     <Compile Include="GameForms\Form_License.Designer.cs">
       <DependentUpon>Form_License.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameForms\Form_Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\Form_Popup.Designer.cs">
+      <DependentUpon>Form_Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameForms\Form_Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\Form_Summary.Designer.cs">
+      <DependentUpon>Form_Summary.cs</DependentUpon>
     </Compile>
     <Compile Include="GameForms\Form_Welcome.cs">
       <SubType>Form</SubType>
@@ -70,11 +94,23 @@
     <Compile Include="GameManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GameForms\Form_ActualInstallation.resx">
+      <DependentUpon>Form_ActualInstallation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForms\Form_Customize.resx">
+      <DependentUpon>Form_Customize.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_InstallationType.resx">
       <DependentUpon>Form_InstallationType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_License.resx">
       <DependentUpon>Form_License.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForms\Form_Popup.resx">
+      <DependentUpon>Form_Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForms\Form_Summary.resx">
+      <DependentUpon>Form_Summary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_Welcome.resx">
       <DependentUpon>Form_Welcome.cs</DependentUpon>
@@ -134,6 +170,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\F - Windows Pop 1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

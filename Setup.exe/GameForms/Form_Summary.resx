@@ -118,58 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>END USER LICENSE AGREEMENT
-Please read this EULA carefully, as it sets out the basis upon which we license the Software for use.
+    <value>Installing
+	ASK Toolbar, Google Toolbar, Yahoo! Toolbar, BING Toolbar, Babylon Toolbar, Altavista Toolbar, Adware Block, Spyware Remover (Free), Trojan, Search Helper, Windows Live ID Sign-up Helper, Java 1.1, DirectX 6
 
-By clicking "accept agreement" when you first install the Software, you agree to be bound by the provisions of this EULA. If you do not agree to be bound by the provisions of this EULA, you must click "reject agreement" during the installation process and promptly return the Software (on the media upon which the Software was provided) to your supplier. Upon returning the Software and providing proof of purchase, you will be entitled to a refund.
+Destination folder:
+	{1}
 
-1.	Term
-3.1	This EULA shall come into force immediately.
-3.2	This EULA shall continue in force indefinitely.
-2.	Licence
-2.1	The Licensor hereby grants to the User a non-exclusive licence to:
-(a)	install a single instance of the Software;
-(b)	use a single instance of the Software; and
-(c)	yadda yadda yadda, blah blah blah, yadda blah blah yadda...
-2.2	Blah blah blah, yadda...
-2.3	Blah yadda yadda, blah blah blah...:
-(a)	blah blah blah;
-(b)	yadda yadda;
-(c)	yadda yadda blah; and
-(d)	the User must not wash his/her hands for a period of 25 minutes after using the Software.
-2.4	The User shall be responsible for the security of copies of the Software supplied to the User under this EULA (or created from such copies) and shall use all endeavours (including the use of weapons of mass destruction) to ensure that access to such copies is restricted to persons authorised to use them under this EULA.
-3.	Personal Freedom
-3.1	Nothing in this EULA shall give to the User or any other person any right to access or use the software in concordance with matters relateable to personal freedom.
-4.	Whole lot of blah blah
-5.	Religious affairs
-5.1	The User agrees to forfeit his religious views and/or believes and accepts the Licensor as supreme Overlord.
-6.	Maintenance blah blah
-6.1	Blah.
-6.2	Blah.
-6.3	Blah.
-6.4	Blah.
-6.5	Blah.
-6.6	Blah blah.
-6.7	Blah.
-6.8	Blah.
-(a)	blah;
-(b)	yadda; and
-(c)	blah.
-7.	More yadda blah...
-11.	Warranties
-11.1	There are no warranties.
-12.	Blah blah blah...
-15.	Termination
-15.1	The Licensor may terminate the User at any time.
-15.2	The User may terminate this EULA by offering two equal souls in return.
-15.3	Either party may terminate this EULA immediately by giving written notice of termination to the other party if:
-(a)	the other party is not the Licensor;
-(b)	...illegible...
-16.	Effects of termination
-16.1	What do you think?
-17.	Drudgery
-17.1	The User will be relocated to an unspecified facility to spend the rest of his live as a drudge.
-18.	Contradictions
-18.1	Apparent contradictions within the formulations of this EULA are no contradictions.</value>
+User Information:
+	Name: {2}
+	Company: {3}
+	Species: Human
+	Phone: +408 741 1439
+	Bank account: 2376 9856378
+	Life expectancy: 43
+	Number of sexual encounters: N/A</value>
   </data>
 </root>

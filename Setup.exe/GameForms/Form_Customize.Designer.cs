@@ -131,13 +131,18 @@
             "BING Toolbar",
             "Babylon Toolbar",
             "Altavista Toolbar",
-            "Adware Block",
+            "Anti Adware Block",
             "Spyware Remover (Free)",
-            "Trojan",
+            "Trojan Remover",
+            "KeyGen",
             "Search Helper",
             "Windows Live ID Sign-up Helper",
             "Java 1.1",
-            "DirectX 6"});
+            "DirectX 6",
+            "RedTube Toolbar",
+            "xnxx Toolbar",
+            "ilovethefishes.com Desktop Shortcut",
+            "lemonparty.com Desktop Shortcut"});
             this.checkedListBox.Location = new System.Drawing.Point(192, 168);
             this.checkedListBox.Name = "checkedListBox";
             this.checkedListBox.Size = new System.Drawing.Size(272, 109);
@@ -201,12 +206,12 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(8, 248);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(138, 13);
             this.label3.TabIndex = 35;
-            this.label3.Text = "Space Available: 23GB";
+            this.label3.Text = "Space Available: 44GB";
             // 
             // Form_Customize
             // 
