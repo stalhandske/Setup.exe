@@ -16,6 +16,11 @@ namespace Setup.exe.GameForms
 		{
 			InitializeComponent();
 		}
+
+		private void button_cancel_Click(object sender, EventArgs e)
+		{
+			button_cancel.Enabled = false;
+		}
 	}
 
 

@@ -16,7 +16,7 @@ namespace Setup.exe.GameForms
         public Form_Finish()
         {
             InitializeComponent();
-	        if (InstallationSetting.SelectedComponents[0]== "ASK Toolbar")
+	        if (InstallationSetting.SelectedComponents.Count==1&&InstallationSetting.SelectedComponents[0]== "ASK Toolbar")
 	        {
 		        label_description.Text = "Successfully installed ASK toolbar! \nGame Over!";
 	        }
