@@ -119,14 +119,13 @@
   </resheader>
   <data name="textBox1.Text" xml:space="preserve">
     <value>Installing
-	ASK Toolbar, Google Toolbar, Yahoo! Toolbar, BING Toolbar, Babylon Toolbar, Altavista Toolbar, Adware Block, Spyware Remover (Free), Trojan, Search Helper, Windows Live ID Sign-up Helper, Java 1.1, DirectX 6
+	{0}
 
 Destination folder:
 	{1}
 
 User Information:
 	Name: {2}
-	Company: {3}
 	Species: Human
 	Phone: +408 741 1439
 	Bank account: 2376 9856378
