@@ -11,6 +11,11 @@ namespace Setup.exe.GameForms
 		public Form_Installation()
 		{
 			InitializeComponent();
+			if (InstallationSetting.SelectedComponents.Count == 0)
+			{
+				GameManager.Instance.NextEvent();
+				return;
+			}
 			label_status.Text = InstallationSetting.SelectedComponents[moduleIndex];
 		}
 
