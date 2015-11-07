@@ -15,13 +15,13 @@ namespace Setup.exe
 		{
 			typeof(Form_OSWarning),
 			typeof (Form_Welcome),
+			typeof (Form_ActualInstallation),
 			typeof (Form_License),
 			typeof (Form_InstallationType),
 			typeof (Form_Customize),
 			typeof (Form_Summary),
-			typeof (Form_ActualInstallation),
 			typeof (Form_Finish),
-			typeof (Form_BadEnding)
+			typeof (Form_BadEnding),
 		};
 
 		private int _currentEventIndex;

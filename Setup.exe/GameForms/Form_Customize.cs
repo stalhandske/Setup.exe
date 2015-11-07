@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
-using System.Security.Cryptography;
+using System.Linq;
 
 namespace Setup.exe.GameForms
 {
@@ -17,7 +18,17 @@ namespace Setup.exe.GameForms
 				checkedListBox.SetItemChecked(i, true);
 			}
 			_targetPosition = checkedListBox.Location;
-			Program.RandomGenerator=new Random(42);
+			Program.RandomGenerator = new Random(42);
+			UpdateSelection();
+		}
+
+		private void UpdateSelection()
+		{
+			InstallationSetting.SelectedComponents=new List<string>();
+			foreach (var item in checkedListBox.CheckedItems)
+			{
+				InstallationSetting.SelectedComponents.Add(item.ToString());
+			}
 		}
 
 		private void textBox_browse_TextChanged(object sender, EventArgs e)
@@ -40,6 +51,7 @@ namespace Setup.exe.GameForms
 
 		private void checkedListBox_SelectedIndexChanged(object sender, EventArgs e)
 		{
+			UpdateSelection();
 		}
 
 		private void checkedListBox_SelectedValueChanged(object sender, EventArgs e)
@@ -54,8 +66,8 @@ namespace Setup.exe.GameForms
 			}
 			else
 			{
-				if(moveCount%4==0)
-					_targetPosition=new Point(Program.RandomGenerator.Next(800),Program.RandomGenerator.Next(600));
+				if (moveCount%4 == 0)
+					_targetPosition = new Point(Program.RandomGenerator.Next(800), Program.RandomGenerator.Next(600));
 			}
 		}
 
@@ -63,8 +75,8 @@ namespace Setup.exe.GameForms
 		{
 			var p = checkedListBox.Location;
 			var speed = 0.1f;
-			checkedListBox.Location = new Point	((int)Math.Round( (p.X*(1 - speed) + (float)_targetPosition.X*speed)),
-												(int) Math.Round(p.Y*(1 - speed) + (float)_targetPosition.Y*speed));
+			checkedListBox.Location = new Point((int) Math.Round((p.X*(1 - speed) + _targetPosition.X*speed)),
+				(int) Math.Round(p.Y*(1 - speed) + _targetPosition.Y*speed));
 			base.OnGameUpdate();
 		}
 	}

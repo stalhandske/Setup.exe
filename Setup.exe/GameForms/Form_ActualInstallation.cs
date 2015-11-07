@@ -24,8 +24,7 @@ namespace Setup.exe.GameForms
 		{
 			if (progressBar.Value - 4000 <= 0)
 			{
-                DialogBox.ShowDialogBox("Setup canceled. Some toolbars may persist.");
-                Application.Exit();
+				GameManager.Instance.NextEvent();
             }
 			else
 			{

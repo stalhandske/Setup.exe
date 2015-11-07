@@ -62,6 +62,12 @@
     <Compile Include="GameForms\Form_BadEnding.Designer.cs">
       <DependentUpon>Form_BadEnding.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameForms\Form_Installation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\Form_Installation.Designer.cs">
+      <DependentUpon>Form_Installation.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameForms\Form_OSWarning.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_Finish.resx">
       <DependentUpon>Form_Finish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForms\Form_Installation.resx">
+      <DependentUpon>Form_Installation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_InstallationType.resx">
       <DependentUpon>Form_InstallationType.cs</DependentUpon>
