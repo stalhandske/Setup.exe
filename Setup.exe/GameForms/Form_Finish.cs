@@ -16,5 +16,16 @@ namespace Setup.exe.GameForms
         {
             InitializeComponent();
         }
+
+        private void button_next_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button_cancel_Click(object sender, EventArgs e)
+        {
+            DialogBox.ShowDialogBox("Hahaha, too l8!");
+            Application.Exit();
+        }
     }
 }

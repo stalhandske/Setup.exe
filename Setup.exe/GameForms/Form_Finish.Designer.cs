@@ -61,6 +61,7 @@
             this.button_next.TabIndex = 50;
             this.button_next.Text = "Finish";
             this.button_next.UseVisualStyleBackColor = true;
+            this.button_next.Click += new System.EventHandler(this.button_next_Click);
             // 
             // label1
             // 
@@ -163,6 +164,7 @@
             this.button_cancel.TabIndex = 52;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // Form_Finish
             // 
