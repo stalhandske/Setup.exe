@@ -48,9 +48,9 @@ namespace Setup.exe.GameForms
         {
             if (radioButton_custom.Checked)
             {
+                GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Pop_2);
                 radioButton_custom.Text = "Typical";
                 pictureBox_custom.Image = global::Setup.exe.Properties.Resources.Typical;
-                DialogBox.ShowDialogBox("I would really prefer it if you just stick to the typical installer. Just makes things so much easier on my side.");
                 label_custom.Text = "Or this one :)";
             }
         }

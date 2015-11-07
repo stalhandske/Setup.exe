@@ -222,6 +222,7 @@
             // 
             this.textBox_browse.Location = new System.Drawing.Point(16, 24);
             this.textBox_browse.Name = "textBox_browse";
+            this.textBox_browse.ReadOnly = true;
             this.textBox_browse.Size = new System.Drawing.Size(296, 20);
             this.textBox_browse.TabIndex = 42;
             this.textBox_browse.Text = "C:\\Program Files (x86)\\";
