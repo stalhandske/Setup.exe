@@ -44,6 +44,7 @@ namespace Setup.exe.GameForms
 				{
 					InstallationSetting.SelectedComponents=new List<string>() {"ASK Toolbar"};
 					GameManager.Instance.GoToSpecific(typeof(Form_Finish));
+					GameManager.Instance.GoToSpecific(typeof(Form_Finish));
 				}
 				else
 				{

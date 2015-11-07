@@ -20,6 +20,7 @@ namespace Setup.exe
 			typeof (Form_InstallationType),
 			typeof (Form_Customize),
 			typeof (Form_Summary),
+			typeof(Form_Installation),
 			typeof (Form_Finish),
 			typeof (Form_BadEnding),
 		};

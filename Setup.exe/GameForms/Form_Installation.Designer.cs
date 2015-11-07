@@ -31,6 +31,7 @@
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.progressBar = new System.Windows.Forms.ProgressBar();
 			this.button_cancel = new System.Windows.Forms.Button();
+			this.label_status = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -61,11 +62,21 @@
 			this.button_cancel.UseVisualStyleBackColor = true;
 			this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
 			// 
+			// label_status
+			// 
+			this.label_status.AutoSize = true;
+			this.label_status.Location = new System.Drawing.Point(86, 10);
+			this.label_status.Name = "label_status";
+			this.label_status.Size = new System.Drawing.Size(35, 13);
+			this.label_status.TabIndex = 59;
+			this.label_status.Text = "label1";
+			// 
 			// Form_Installation
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(370, 99);
+			this.Controls.Add(this.label_status);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.progressBar);
 			this.Controls.Add(this.button_cancel);
@@ -73,6 +84,7 @@
 			this.Text = "Form_Installation";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -81,5 +93,6 @@
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.ProgressBar progressBar;
 		private System.Windows.Forms.Button button_cancel;
+		private System.Windows.Forms.Label label_status;
 	}
 }

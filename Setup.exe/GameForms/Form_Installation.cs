@@ -15,11 +15,30 @@ namespace Setup.exe.GameForms
 		public Form_Installation()
 		{
 			InitializeComponent();
+			label_status.Text = InstallationSetting.SelectedComponents[moduleIndex];
 		}
 
 		private void button_cancel_Click(object sender, EventArgs e)
 		{
 			button_cancel.Enabled = false;
+		}
+
+		private int moduleIndex = 0;
+		public override void OnGameUpdate()
+		{
+			progressBar.Value += 10;
+			if (progressBar.Value == 100)
+			{
+				progressBar.Value = 0;
+				moduleIndex++;
+				if (moduleIndex == InstallationSetting.SelectedComponents.Count)
+				{
+					GameManager.Instance.NextEvent();
+					return;
+				}
+				label_status.Text = InstallationSetting.SelectedComponents[moduleIndex];
+			}
+			base.OnGameUpdate();
 		}
 	}
 
