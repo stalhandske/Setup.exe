@@ -47,7 +47,6 @@
 			// progressBar
 			// 
 			this.progressBar.Location = new System.Drawing.Point(16, 66);
-			this.progressBar.Maximum = 10000;
 			this.progressBar.Name = "progressBar";
 			this.progressBar.Size = new System.Drawing.Size(248, 23);
 			this.progressBar.TabIndex = 57;
@@ -65,9 +64,10 @@
 			// label_status
 			// 
 			this.label_status.AutoSize = true;
+			this.label_status.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label_status.Location = new System.Drawing.Point(86, 10);
 			this.label_status.Name = "label_status";
-			this.label_status.Size = new System.Drawing.Size(35, 13);
+			this.label_status.Size = new System.Drawing.Size(41, 13);
 			this.label_status.TabIndex = 59;
 			this.label_status.Text = "label1";
 			// 
