@@ -50,7 +50,7 @@
             this.label_description.AutoSize = true;
             this.label_description.BackColor = System.Drawing.Color.Transparent;
             this.label_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_description.Location = new System.Drawing.Point(88, 16);
+            this.label_description.Location = new System.Drawing.Point(128, 16);
             this.label_description.Name = "label_description";
             this.label_description.Size = new System.Drawing.Size(141, 13);
             this.label_description.TabIndex = 50;
@@ -66,10 +66,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Setup.exe.Properties.Resources.Install;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 8);
+            this.pictureBox1.Image = global::Setup.exe.Properties.Resources.ask_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 56);
+            this.pictureBox1.Size = new System.Drawing.Size(112, 80);
             this.pictureBox1.TabIndex = 55;
             this.pictureBox1.TabStop = false;
             // 
@@ -78,8 +78,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 99);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.progressBar);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.label_description);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

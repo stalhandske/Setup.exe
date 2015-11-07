@@ -238,6 +238,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Box2DX.dll" />
+    <None Include="Resources\ask-logo.png" />
     <Content Include="Resources\Custom.png" />
     <None Include="Resources\EULA2.txt" />
     <None Include="Resources\giphy.gif" />
