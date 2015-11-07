@@ -22,13 +22,16 @@ namespace Setup.exe.GameForms
 
 		private void button_cancel_Click(object sender, EventArgs e)
 		{
-			if (progressBar.Value - 4000 <= 0)
+            
+            if (progressBar.Value - 4000 <= 0)
 			{
-				GameManager.Instance.NextEvent();
+                GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Error);
+                GameManager.Instance.NextEvent();
 			}
 			else
 			{
-				if (_doFillup)
+                GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Error);
+                if (_doFillup)
 				{
 					progressBar.Value -= 4000;
 				}
