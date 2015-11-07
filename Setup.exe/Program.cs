@@ -12,6 +12,7 @@ namespace Setup.exe
 		/// <summary>
 		/// Der Haupteinstiegspunkt für die Anwendung.
 		/// </summary>
+		public static Random RandomGenerator=new Random(System.DateTime.Now.Millisecond);
 		[STAThread]
 		static void Main()
 		{
