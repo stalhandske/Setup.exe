@@ -34,12 +34,8 @@ namespace Setup.exe.GameForms
                     {
                         GameManager.Instance.NextEvent();
                     }
-                    else if (!firstNext)
-                    {
-                        // Bad ending
-                    }
                     else
-                    { 
+                    {
                         DialogBox.ShowDialogBox("Are you really sure you want to do that?");
                         textBox1.Focus();
                         //textBox1.Select(0, 10);
@@ -53,17 +49,32 @@ namespace Setup.exe.GameForms
                 }
                 else
                 {
-                    DialogBox.ShowDialogBox("That's fair. Let me give you something more simple.");
-                    textBox1.Text = global::Setup.exe.Properties.Resources.EULA2;
-                    // INSERT NEW LICENSE AGREEMENT HERE
-                    eulaChanged = true;
+                    if (!eulaChanged)
+                    { 
+                        DialogBox.ShowDialogBox("That's fair. Let me give you something more simple.");
+                        textBox1.Text = global::Setup.exe.Properties.Resources.EULA2;
+                        // INSERT NEW LICENSE AGREEMENT HERE
+                        eulaChanged = true;
+                    }
+                    else
+                    {
+                        DialogBox.ShowDialogBox("Ah, you kinda have to agree with this one.");
+                    }
                 }
 
                 
             }
             else
             {
-                GameManager.Instance.NextEvent();
+                if (radioButton_agree.Checked)
+                    GameManager.Instance.GoToSpecific(typeof(Form_BadEnding));
+                else
+                {
+                    DialogBox.ShowDialogBox("That's fair. Let me give you something more simple.");
+                    textBox1.Text = global::Setup.exe.Properties.Resources.EULA2;
+                    // INSERT NEW LICENSE AGREEMENT HERE
+                    eulaChanged = true;
+                }
             }
         
         }

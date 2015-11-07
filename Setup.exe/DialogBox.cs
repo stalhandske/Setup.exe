@@ -28,7 +28,7 @@ namespace Setup.exe
 
 		public static void ShowDialogBox(string text, string headerText = "DialogBox")
 		{
-            GameManager.Instance.PlaySound("Windows Pop 1");
+            GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Pop_1);
 
             DialogBox box=new DialogBox(text,headerText);
 			box.ShowDialog();

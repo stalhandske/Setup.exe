@@ -56,6 +56,12 @@
     <Compile Include="DialogBox.Designer.cs">
       <DependentUpon>DialogBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameForms\Form_BadEnding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForms\Form_BadEnding.Designer.cs">
+      <DependentUpon>Form_BadEnding.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameForms\Form_OSWarning.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_ActualInstallation.resx">
       <DependentUpon>Form_ActualInstallation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForms\Form_BadEnding.resx">
+      <DependentUpon>Form_BadEnding.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameForms\Form_Customize.resx">
       <DependentUpon>Form_Customize.cs</DependentUpon>

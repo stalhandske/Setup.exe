@@ -20,7 +20,8 @@ namespace Setup.exe
 			typeof (Form_Customize),
 			typeof (Form_Summary),
 			typeof (Form_ActualInstallation),
-			typeof (Form_Finish)
+			typeof (Form_Finish),
+            typeof (Form_BadEnding)
 		};
 
 		private int _currentEventIndex;
@@ -83,10 +84,10 @@ namespace Setup.exe
 			return Activator.CreateInstance(type) as GameForm;
 		}
 
-        public void PlaySound(String soundName)
+        public void PlaySound(System.IO.Stream s)
         {
-            System.Reflection.Assembly a = System.Reflection.Assembly.GetExecutingAssembly();
-            System.IO.Stream s = a.GetManifestResourceStream("<AssemblyName>."+ soundName+".wav");
+            
+            //System.Reflection.Assembly a = System.Reflection.Assembly.GetExecutingAssembly();
             SoundPlayer player = new SoundPlayer(s);
             player.Play();
         }
