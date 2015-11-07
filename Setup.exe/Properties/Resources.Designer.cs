@@ -196,6 +196,16 @@ namespace Setup.exe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {\rtf1\ansi\deff3\adeflang1025
+        ///{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset128 Times New Roman;}{\f6\fswiss\fprq0\fcharset128 Helvetica{\*\falt Arial};}{\f7\fswiss\fprq2\fcharset128 DejaVu Sans;}{\f8\fmodern\fprq1\fcharset128 Liberation Mono{\*\falt Courier New};}{\f9\fswi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Suicide_Note {
+            get {
+                return ResourceManager.GetString("Suicide_Note", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap SupeCustom {

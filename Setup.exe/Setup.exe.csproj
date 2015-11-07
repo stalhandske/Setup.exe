@@ -188,6 +188,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Suicide-Note.rtf" />
     <None Include="Resources\Sundown.png" />
   </ItemGroup>
   <ItemGroup>

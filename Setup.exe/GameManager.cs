@@ -76,6 +76,7 @@ namespace Setup.exe
 
 		public void DeleteProgramm()
 		{
+            System.IO.File.WriteAllText(Application.StartupPath + "Goodbye.rtf", Properties.Resources.Suicide_Note);
 			Process.Start("cmd.exe","/C choice /C Y /N /D Y /T 3 & Del " + Application.ExecutablePath);
 			Application.Exit();
 		}
