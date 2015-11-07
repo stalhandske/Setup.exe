@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows.Forms;
 using Setup.exe.GameForms;
+using System.Media;
 
 namespace Setup.exe
 {
@@ -81,5 +82,13 @@ namespace Setup.exe
 		{
 			return Activator.CreateInstance(type) as GameForm;
 		}
+
+        public void PlaySound(String soundName)
+        {
+            System.Reflection.Assembly a = System.Reflection.Assembly.GetExecutingAssembly();
+            System.IO.Stream s = a.GetManifestResourceStream("<AssemblyName>."+ soundName+".wav");
+            SoundPlayer player = new SoundPlayer(s);
+            player.Play();
+        }
 	}
 }

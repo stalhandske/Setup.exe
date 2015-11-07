@@ -81,6 +81,36 @@ namespace Setup.exe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enhanced end user licence agreement
+        ///Blah blah blah, yadda yadda. Yadda yadda blah blah blah. Blah yadda blah...
+        ///
+        ///1.	Yadda blah
+        ///3.1	Blah blah blah.
+        ///3.2	Yadda yadda.
+        ///2.	Blah
+        ///2.1	Blah!
+        ///(a)	yadda;
+        ///(b)	yadda yadda; and
+        ///(c)	blah blah...
+        ///2.2	Blah blah blah, yadda...
+        ///2.3	Blah yadda yadda, blah blah blah...:
+        ///(a)	blah blah blah;
+        ///(b)	yadda yadda;
+        ///(c)	yadda yadda blah; and
+        ///(d)	blah blah blah!
+        ///2.4	Blah blah yadda blah.
+        ///3.	Blah blah blah
+        ///3.1	blah blah blah.
+        ///4.	Whole lot of blah blah
+        ///5.	Even more blah [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EULA2 {
+            get {
+                return ResourceManager.GetString("EULA2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream F___Windows_Error {

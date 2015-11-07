@@ -13,6 +13,7 @@ namespace Setup.exe.GameForms
     public partial class Form_License : GameForm
     {
         bool firstNext = true;
+        bool eulaChanged = false;
 
         public Form_License()
         {
@@ -29,12 +30,33 @@ namespace Setup.exe.GameForms
                 }
                 else if (radioButton_agree.Checked)
                 {
+                    if (eulaChanged)
+                    {
+                        GameManager.Instance.NextEvent();
+                    }
+                    else if (!firstNext)
+                    {
+                        // Bad ending
+                    }
+                    else
+                    { 
+                        DialogBox.ShowDialogBox("Are you really sure you want to do that?");
+                        textBox1.Focus();
+                        //textBox1.Select(0, 10);
+                        textBox1.SelectionStart = textBox1.Text.IndexOf("(d)");
+                        textBox1.SelectionLength = textBox1.Text.IndexOf("2.4") - textBox1.Text.IndexOf("(d)");
+                        DialogBox.ShowDialogBox("Maybe you should read this section more carefully.");
+                        textBox1.ScrollToCaret();
 
+                        firstNext = false;
+                    }
                 }
                 else
                 {
+                    DialogBox.ShowDialogBox("That's fair. Let me give you something more simple.");
+                    textBox1.Text = global::Setup.exe.Properties.Resources.EULA2;
                     // INSERT NEW LICENSE AGREEMENT HERE
-                    firstNext = false;
+                    eulaChanged = true;
                 }
 
                 
@@ -51,9 +73,9 @@ namespace Setup.exe.GameForms
 
         }
 
-        private void textBox1_MouseUp(object sender, EventArgs e)
+        private void button_back_Click(object sender, EventArgs e)
         {
-            button_next.Enabled = true;
+            DialogBox.ShowDialogBox("Yeah, actually that button is just for show.");
         }
     }
 }

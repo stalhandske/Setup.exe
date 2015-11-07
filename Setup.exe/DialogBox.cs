@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,8 +28,10 @@ namespace Setup.exe
 
 		public static void ShowDialogBox(string text, string headerText = "DialogBox")
 		{
-			DialogBox box=new DialogBox(text,headerText);
+            GameManager.Instance.PlaySound("Windows Pop 1");
+
+            DialogBox box=new DialogBox(text,headerText);
 			box.ShowDialog();
-		}
+        }
 	}
 }
