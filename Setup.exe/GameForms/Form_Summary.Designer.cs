@@ -160,6 +160,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Summary";
             this.Text = "Form_Summary";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

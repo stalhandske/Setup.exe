@@ -198,6 +198,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_License";
             this.Text = "Setup";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

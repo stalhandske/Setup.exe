@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ActualInstallation));
             this.button_cancel = new System.Windows.Forms.Button();
             this.label_description = new System.Windows.Forms.Label();
             this.progressBar = new System.Windows.Forms.ProgressBar();
@@ -83,6 +84,7 @@
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.label_description);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_ActualInstallation";
             this.Text = "Hold On";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

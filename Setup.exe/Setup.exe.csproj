@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Build9600%288%29.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Box2DX, Version=2.0.1.28279, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
@@ -239,6 +242,7 @@
   <ItemGroup>
     <Content Include="Box2DX.dll" />
     <None Include="Resources\ask-logo.png" />
+    <Content Include="Build9600%288%29.ico" />
     <Content Include="Resources\Custom.png" />
     <None Include="Resources\EULA2.txt" />
     <None Include="Resources\giphy.gif" />

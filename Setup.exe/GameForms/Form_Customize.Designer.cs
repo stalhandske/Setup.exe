@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Customize));
             this.checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button_cancel = new System.Windows.Forms.Button();
@@ -259,6 +260,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_background);
             this.Controls.Add(this.groupBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Customize";
             this.Text = "Setup";
             this.groupBox.ResumeLayout(false);

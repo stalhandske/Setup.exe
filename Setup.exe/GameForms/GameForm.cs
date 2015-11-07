@@ -55,5 +55,19 @@ namespace Setup.exe.GameForms
 			_shouldStop = true;
 			//_updateThread.Join();
 		}
-	}
+
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
+            this.SuspendLayout();
+            // 
+            // GameForm
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "GameForm";
+            this.ResumeLayout(false);
+
+        }
+    }
 }

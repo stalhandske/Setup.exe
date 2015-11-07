@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_InstallationType));
             this.label2 = new System.Windows.Forms.Label();
             this.button_cancel = new System.Windows.Forms.Button();
             this.button_back = new System.Windows.Forms.Button();
@@ -268,6 +269,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_InstallationType";
             this.Text = "Setup";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

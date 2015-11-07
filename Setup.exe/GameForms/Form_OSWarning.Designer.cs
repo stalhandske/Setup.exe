@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_OSWarning));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_name = new System.Windows.Forms.Label();
             this.label_publisher = new System.Windows.Forms.Label();
@@ -112,6 +113,7 @@
             this.Controls.Add(this.label_name);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_OSWarning";
             this.Text = "Windows - Security Warning";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
