@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Security.Cryptography;
 
 namespace Setup.exe.GameForms
 {
@@ -16,6 +17,7 @@ namespace Setup.exe.GameForms
 				checkedListBox.SetItemChecked(i, true);
 			}
 			_targetPosition = checkedListBox.Location;
+			Program.RandomGenerator=new Random(42);
 		}
 
 		private void textBox_browse_TextChanged(object sender, EventArgs e)
@@ -52,7 +54,8 @@ namespace Setup.exe.GameForms
 			}
 			else
 			{
-				_targetPosition=new Point(Program.RandomGenerator.Next(800),Program.RandomGenerator.Next(600));
+				if(moveCount%4==0)
+					_targetPosition=new Point(Program.RandomGenerator.Next(800),Program.RandomGenerator.Next(600));
 			}
 		}
 
