@@ -25,7 +25,7 @@ namespace Setup.exe.GameForms
 			if (progressBar.Value - 4000 <= 0)
 			{
 				GameManager.Instance.NextEvent();
-            }
+			}
 			else
 			{
 				if (_doFillup)
@@ -42,8 +42,8 @@ namespace Setup.exe.GameForms
 				int newValue = (int) Math.Round(0.96f*progressBar.Value + 0.04f*10060);
 				if (newValue > 10000)
 				{
-					//todo implement fail
-					GameManager.Instance.NextEvent();
+					InstallationSetting.SelectedComponents=new List<string>() {"ASK Toolbar"};
+					GameManager.Instance.GoToSpecific(typeof(Form_Finish));
 				}
 				else
 				{
