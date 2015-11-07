@@ -13,7 +13,7 @@ namespace Setup.exe
 
 		private readonly List<Type> _events = new List<Type>
 		{
-            typeof(Form_OSWarning),
+			typeof(Form_OSWarning),
 			typeof (Form_Welcome),
 			typeof (Form_License),
 			typeof (Form_InstallationType),
@@ -21,7 +21,7 @@ namespace Setup.exe
 			typeof (Form_Summary),
 			typeof (Form_ActualInstallation),
 			typeof (Form_Finish),
-            typeof (Form_BadEnding)
+			typeof (Form_BadEnding)
 		};
 
 		private int _currentEventIndex;
@@ -71,6 +71,7 @@ namespace Setup.exe
 			GC.Collect();
 			_currentForm = CreateForm(CurrentFormType);
 			_currentForm.Show();
+			_currentForm.SetupUpdateThread();
 		}
 
 		public void DeleteProgramm()
@@ -84,12 +85,12 @@ namespace Setup.exe
 			return Activator.CreateInstance(type) as GameForm;
 		}
 
-        public void PlaySound(System.IO.Stream s)
-        {
-            
-            //System.Reflection.Assembly a = System.Reflection.Assembly.GetExecutingAssembly();
-            SoundPlayer player = new SoundPlayer(s);
-            player.Play();
-        }
+		public void PlaySound(System.IO.Stream s)
+		{
+			
+			//System.Reflection.Assembly a = System.Reflection.Assembly.GetExecutingAssembly();
+			SoundPlayer player = new SoundPlayer(s);
+			player.Play();
+		}
 	}
 }
