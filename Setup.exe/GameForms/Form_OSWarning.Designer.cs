@@ -52,9 +52,9 @@
             this.label_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_name.Location = new System.Drawing.Point(16, 80);
             this.label_name.Name = "label_name";
-            this.label_name.Size = new System.Drawing.Size(64, 13);
+            this.label_name.Size = new System.Drawing.Size(106, 13);
             this.label_name.TabIndex = 1;
-            this.label_name.Text = "Name: {0}";
+            this.label_name.Text = "Name: Setup Inc.";
             // 
             // label_publisher
             // 

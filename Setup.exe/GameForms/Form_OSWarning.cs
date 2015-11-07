@@ -35,14 +35,22 @@ namespace Setup.exe.GameForms
 
         private void button2_Enter(object sender, EventArgs e)
         {
-            button2.Text = "Run";
-            button1.Text = "Don't Run";
+            if (button2.Text != "Run")
+            {
+                GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Pop_2);
+                button2.Text = "Run";
+                button1.Text = "Don't Run";
+            }
         }
 
         private void button1_Enter(object sender, EventArgs e)
         {
-            button2.Text = "Don't Run";
-            button1.Text = "Run";
+            if (button1.Text != "Run")
+            {
+                GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Pop_2);
+                button2.Text = "Don't Run";
+                button1.Text = "Run";
+            }
         }
     }
 }

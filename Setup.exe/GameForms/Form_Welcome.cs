@@ -34,6 +34,7 @@ namespace Setup.exe.GameForms
 
         private void button_cancel_Enter(object sender, EventArgs e)
         {
+            GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Pop_2);
             button_cancel.Text = "Next >";
         }
 

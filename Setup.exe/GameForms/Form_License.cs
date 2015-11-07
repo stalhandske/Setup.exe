@@ -135,6 +135,7 @@ namespace Setup.exe.GameForms
 
         private void button_cancel_Enter(object sender, EventArgs e)
         {
+            GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Pop_2);
             Point p = new Point();
             Random r = new Random();
             p.X = r.Next(0, 450);
