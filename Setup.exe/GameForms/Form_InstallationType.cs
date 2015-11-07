@@ -51,7 +51,7 @@ namespace Setup.exe.GameForms
                 GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Pop_2);
                 radioButton_custom.Text = "Typical";
                 pictureBox_custom.Image = global::Setup.exe.Properties.Resources.Typical;
-                label_custom.Text = "Or this one :)";
+                label_custom.Text = "Choose this option.";
             }
         }
     }

@@ -9,6 +9,7 @@ namespace Setup.exe.GameForms
 	{
 		private Point _targetPosition;
 		private int moveCount;
+        private bool moveBack;
 
 		public Form_Customize()
 		{
@@ -78,6 +79,23 @@ namespace Setup.exe.GameForms
 			checkedListBox.Location = new Point((int) Math.Round((p.X*(1 - speed) + _targetPosition.X*speed)),
 				(int) Math.Round(p.Y*(1 - speed) + _targetPosition.Y*speed));
 			base.OnGameUpdate();
+
+            if (moveBack)
+            {
+                Point point = button_back.Location;
+                point.X -= 1;
+                button_back.Location = point;
+            }
 		}
-	}
+
+        private void button_back_Click(object sender, EventArgs e)
+        {
+            moveBack = true;
+        }
+
+        private void button_cancel_Click(object sender, EventArgs e)
+        {
+            moveBack = false;
+        }
+    }
 }

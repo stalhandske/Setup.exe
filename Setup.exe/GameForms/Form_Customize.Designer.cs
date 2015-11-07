@@ -103,6 +103,7 @@
             this.button_cancel.TabIndex = 38;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // button_back
             // 
@@ -112,6 +113,7 @@
             this.button_back.TabIndex = 37;
             this.button_back.Text = "< Back";
             this.button_back.UseVisualStyleBackColor = true;
+            this.button_back.Click += new System.EventHandler(this.button_back_Click);
             // 
             // button_next
             // 
