@@ -32,12 +32,13 @@ namespace Setup.exe
 			this.Close();
 		}
 
-		public static void ShowDialogBox(string text, string buttonText = "OK", string headerText = "DialogBox", string button2Text = "")
+        public static void ShowDialogBox(string text, string buttonText = "OK", string headerText = "DialogBox", string button2Text = "", bool rick = false)
 		{
             GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Pop_1);
 
             DialogBox box=new DialogBox(text,headerText, buttonText, button2Text);
-			box.ShowDialog();
+            box.pictureBox_Rick.Visible = rick;
+            box.ShowDialog();
         }
 	}
 }

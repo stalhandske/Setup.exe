@@ -33,7 +33,9 @@
             this.button_ok = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.button_No = new System.Windows.Forms.Button();
+            this.pictureBox_Rick = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rick)).BeginInit();
             this.SuspendLayout();
             // 
             // label_text
@@ -74,18 +76,30 @@
             this.button_No.Visible = false;
             this.button_No.Click += new System.EventHandler(this.button_ok_Click);
             // 
+            // pictureBox_Rick
+            // 
+            this.pictureBox_Rick.Image = global::Setup.exe.Properties.Resources.giphy;
+            this.pictureBox_Rick.Location = new System.Drawing.Point(24, -24);
+            this.pictureBox_Rick.Name = "pictureBox_Rick";
+            this.pictureBox_Rick.Size = new System.Drawing.Size(304, 176);
+            this.pictureBox_Rick.TabIndex = 4;
+            this.pictureBox_Rick.TabStop = false;
+            this.pictureBox_Rick.Visible = false;
+            // 
             // DialogBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 150);
+            this.Controls.Add(this.button_ok);
+            this.Controls.Add(this.pictureBox_Rick);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.button_No);
-            this.Controls.Add(this.button_ok);
             this.Controls.Add(this.label_text);
             this.Name = "DialogBox";
             this.Text = "DialogBox";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rick)).EndInit();
             this.ResumeLayout(false);
 
 		}
@@ -96,5 +110,6 @@
 		private System.Windows.Forms.Button button_ok;
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button button_No;
+        private System.Windows.Forms.PictureBox pictureBox_Rick;
     }
 }

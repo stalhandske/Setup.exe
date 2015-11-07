@@ -41,7 +41,7 @@ namespace Setup.exe.GameForms
 
         private void button_back_Click(object sender, EventArgs e)
         {
-            DialogBox.ShowDialogBox("Backstreet's back, alright!");
+            DialogBox.ShowDialogBox("Never gonna give you up",rick: true);
         }
 
         private void radioButton_custom_CheckedChanged(object sender, EventArgs e)

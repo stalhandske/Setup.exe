@@ -240,6 +240,7 @@
     <Content Include="Box2DX.dll" />
     <Content Include="Resources\Custom.png" />
     <None Include="Resources\EULA2.txt" />
+    <None Include="Resources\giphy.gif" />
     <Content Include="Resources\Install.png" />
     <None Include="Resources\Shield.png" />
     <Content Include="Resources\SupeCustom.png" />

@@ -29,7 +29,8 @@ namespace Setup.exe.GameForms
 
         private void button_back_Click(object sender, EventArgs e)
         {
-            DialogBox.ShowDialogBox("Never gonna give you up, never gonna let you down, never gonna turn around and desert you. Never gonna make you cry, never gonna ...");
+            GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.F___Windows_Error);
+            button_back.Visible = false;
         }
 
         private void button_cancel_Click(object sender, EventArgs e)
