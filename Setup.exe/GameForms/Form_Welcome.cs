@@ -29,12 +29,17 @@ namespace Setup.exe.GameForms
 
         private void button_cancel_Click(object sender, EventArgs e)
         {
-
+            GameManager.Instance.NextEvent();
         }
 
         private void button_cancel_Enter(object sender, EventArgs e)
         {
-            Size = new Size(400, Size.Height);
+            button_cancel.Text = "Next >";
+        }
+
+        private void button_cancel_Exit(object sender, EventArgs e)
+        {
+            button_cancel.Text = "Cancel";
         }
     }
 }

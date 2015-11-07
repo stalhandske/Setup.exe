@@ -39,10 +39,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Setup.exe.Properties.Resources.WindowsWarning;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 16);
+            this.pictureBox1.Image = global::Setup.exe.Properties.Resources.Shield;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 16);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.Size = new System.Drawing.Size(40, 48);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

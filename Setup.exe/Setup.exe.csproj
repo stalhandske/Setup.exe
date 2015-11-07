@@ -231,6 +231,7 @@
     <Content Include="Resources\Custom.png" />
     <None Include="Resources\EULA2.txt" />
     <Content Include="Resources\Install.png" />
+    <None Include="Resources\Shield.png" />
     <Content Include="Resources\SupeCustom.png" />
     <Content Include="Resources\Typical.png" />
     <None Include="Resources\WindowsWarning.png" />

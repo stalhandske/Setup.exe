@@ -34,17 +34,22 @@ namespace Setup.exe.GameForms
 
         private void button_cancel_Click(object sender, EventArgs e)
         {
+            GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.F___Windows_Error);
             button_cancel.Visible = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pictureBox1_Hover(object sender, EventArgs e)
         {
-            FormBorderStyle = FormBorderStyle.None;
+            if (FormBorderStyle != FormBorderStyle.None)
+            {
+                FormBorderStyle = FormBorderStyle.None;
+                GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.F___Windows_Error);
+            }
         }
     }
 }

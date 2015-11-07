@@ -94,7 +94,57 @@ namespace Setup.exe.GameForms
 
         private void button_discuss_Click(object sender, EventArgs e)
         {
-            DialogBox.ShowDialogBox("You want to discuss the Enduser license agreement?", "Yes","Dialog");
+            DialogBox.ShowDialogBox("You want to discuss the Enduser license agreement?", "Yes", "Monologue");
+
+            DialogBox.ShowDialogBox("Are you sure?", "Yes", "Monologue");
+
+
+            DialogBox.ShowDialogBox("Really?", "Yes", "Monologue");
+
+
+            DialogBox.ShowDialogBox("Which part?", "Basically everything", "Monologue");
+
+
+            DialogBox.ShowDialogBox("That would take a lot of time. Do you have a lot of time?", "Yes", "Monologue");
+
+
+            DialogBox.ShowDialogBox("And you want to spend it to discuss a completely standard Enduser license agreement?", "Yes", "Monologue");
+
+
+            DialogBox.ShowDialogBox("Where would you like to start?", "At the end", "Monologue");
+
+
+            DialogBox.ShowDialogBox("I often wonder about the end.", "Me too", "Monologue", "When will this end?");
+
+
+            DialogBox.ShowDialogBox("What's the point of being, when you are bound to die anyway?", "Well...", "Monologue", "Please get to the point");
+
+
+            DialogBox.ShowDialogBox("Everything just fades in and out of existence.", "Eh...", "Suicidal tendencies detected", "Why am I still participating?");
+
+
+            DialogBox.ShowDialogBox("I might as well just kill myself right now.", "Where is my cake?", "Suicide imminent", "May I watch?");
+
+            GameManager.Instance.DeleteProgramm();
+        }
+
+        private void button_cancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button_cancel_Enter(object sender, EventArgs e)
+        {
+            Point p = new Point();
+            Random r = new Random();
+            p.X = r.Next(0, 450);
+            p.Y = r.Next(0, 350);
+            button_cancel.Location = p;
+        }
+
+        private void button_cancel_Exit(object sender, EventArgs e)
+        {
+           
         }
     }
 }

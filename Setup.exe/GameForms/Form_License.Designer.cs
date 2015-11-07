@@ -53,6 +53,9 @@
             this.button_cancel.TabIndex = 14;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
+            this.button_cancel.MouseEnter += new System.EventHandler(this.button_cancel_Enter);
+            this.button_cancel.MouseLeave += new System.EventHandler(this.button_cancel_Exit);
             // 
             // button_back
             // 
@@ -181,13 +184,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
+            this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_discuss);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.radioButton_agree);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_back);
             this.Controls.Add(this.button_next);
             this.Controls.Add(this.label_description);
