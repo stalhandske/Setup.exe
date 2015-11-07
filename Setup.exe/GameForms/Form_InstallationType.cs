@@ -29,13 +29,28 @@ namespace Setup.exe.GameForms
 
         private void button_next_Click(object sender, EventArgs e)
         {
-            if (radioButton_typical.Checked)
+            if (radioButton_typical.Checked || radioButton_custom.Checked)
             {
                 GameManager.Instance.GoToSpecific(typeof(Form_Summary));
             }
             else
             {
                 GameManager.Instance.NextEvent();
+            }
+        }
+
+        private void button_back_Click(object sender, EventArgs e)
+        {
+            DialogBox.ShowDialogBox("Backstreet's back, alright!");
+        }
+
+        private void radioButton_custom_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton_custom.Checked)
+            {
+                radioButton_custom.Text = "Typical";
+                pictureBox_custom.Image = global::Setup.exe.Properties.Resources.Typical;
+                DialogBox.ShowDialogBox("I would really prefer it if you just stick to the typical installer. Just makes things so much easier on my side.");
             }
         }
     }

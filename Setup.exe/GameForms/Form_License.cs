@@ -55,6 +55,7 @@ namespace Setup.exe.GameForms
                         textBox1.Text = global::Setup.exe.Properties.Resources.EULA2;
                         // INSERT NEW LICENSE AGREEMENT HERE
                         eulaChanged = true;
+                        firstNext = true;
                     }
                     else
                     {
@@ -74,6 +75,7 @@ namespace Setup.exe.GameForms
                     textBox1.Text = global::Setup.exe.Properties.Resources.EULA2;
                     // INSERT NEW LICENSE AGREEMENT HERE
                     eulaChanged = true;
+                    firstNext = true;
                 }
             }
         

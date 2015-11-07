@@ -44,11 +44,11 @@
             this.label_custom = new System.Windows.Forms.Label();
             this.label_veryCustom = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_custom = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_custom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -79,6 +79,7 @@
             this.button_back.TabIndex = 24;
             this.button_back.Text = "< Back";
             this.button_back.UseVisualStyleBackColor = true;
+            this.button_back.Click += new System.EventHandler(this.button_back_Click);
             // 
             // button_next
             // 
@@ -143,7 +144,7 @@
             this.radioButton_typical.AutoSize = true;
             this.radioButton_typical.Checked = true;
             this.radioButton_typical.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_typical.Location = new System.Drawing.Point(24, 120);
+            this.radioButton_typical.Location = new System.Drawing.Point(24, 113);
             this.radioButton_typical.Name = "radioButton_typical";
             this.radioButton_typical.Size = new System.Drawing.Size(66, 17);
             this.radioButton_typical.TabIndex = 29;
@@ -156,19 +157,20 @@
             // 
             this.radioButton_custom.AutoSize = true;
             this.radioButton_custom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_custom.Location = new System.Drawing.Point(24, 184);
+            this.radioButton_custom.Location = new System.Drawing.Point(24, 177);
             this.radioButton_custom.Name = "radioButton_custom";
             this.radioButton_custom.Size = new System.Drawing.Size(66, 17);
             this.radioButton_custom.TabIndex = 30;
             this.radioButton_custom.TabStop = true;
             this.radioButton_custom.Text = "Custom";
             this.radioButton_custom.UseVisualStyleBackColor = true;
+            this.radioButton_custom.CheckedChanged += new System.EventHandler(this.radioButton_custom_CheckedChanged);
             // 
             // radioButton_veryCustom
             // 
             this.radioButton_veryCustom.AutoSize = true;
             this.radioButton_veryCustom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_veryCustom.Location = new System.Drawing.Point(24, 248);
+            this.radioButton_veryCustom.Location = new System.Drawing.Point(24, 241);
             this.radioButton_veryCustom.Name = "radioButton_veryCustom";
             this.radioButton_veryCustom.Size = new System.Drawing.Size(95, 17);
             this.radioButton_veryCustom.TabIndex = 31;
@@ -179,7 +181,7 @@
             // label_typical
             // 
             this.label_typical.AutoSize = true;
-            this.label_typical.Location = new System.Drawing.Point(136, 120);
+            this.label_typical.Location = new System.Drawing.Point(136, 113);
             this.label_typical.Name = "label_typical";
             this.label_typical.Size = new System.Drawing.Size(97, 13);
             this.label_typical.TabIndex = 32;
@@ -188,7 +190,7 @@
             // label_custom
             // 
             this.label_custom.AutoSize = true;
-            this.label_custom.Location = new System.Drawing.Point(136, 184);
+            this.label_custom.Location = new System.Drawing.Point(136, 177);
             this.label_custom.Name = "label_custom";
             this.label_custom.Size = new System.Drawing.Size(163, 13);
             this.label_custom.TabIndex = 32;
@@ -197,7 +199,7 @@
             // label_veryCustom
             // 
             this.label_veryCustom.AutoSize = true;
-            this.label_veryCustom.Location = new System.Drawing.Point(136, 248);
+            this.label_veryCustom.Location = new System.Drawing.Point(136, 241);
             this.label_veryCustom.Name = "label_veryCustom";
             this.label_veryCustom.Size = new System.Drawing.Size(239, 13);
             this.label_veryCustom.TabIndex = 32;
@@ -213,19 +215,19 @@
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBox_custom
             // 
-            this.pictureBox2.Image = global::Setup.exe.Properties.Resources.Custom;
-            this.pictureBox2.Location = new System.Drawing.Point(40, 200);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.TabIndex = 34;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox_custom.Image = global::Setup.exe.Properties.Resources.Custom;
+            this.pictureBox_custom.Location = new System.Drawing.Point(40, 193);
+            this.pictureBox_custom.Name = "pictureBox_custom";
+            this.pictureBox_custom.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox_custom.TabIndex = 34;
+            this.pictureBox_custom.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Setup.exe.Properties.Resources.Typical;
-            this.pictureBox3.Location = new System.Drawing.Point(40, 144);
+            this.pictureBox3.Location = new System.Drawing.Point(40, 137);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.TabIndex = 34;
@@ -234,7 +236,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Setup.exe.Properties.Resources.SupeCustom;
-            this.pictureBox4.Location = new System.Drawing.Point(40, 263);
+            this.pictureBox4.Location = new System.Drawing.Point(40, 258);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(304, 48);
             this.pictureBox4.TabIndex = 34;
@@ -247,7 +249,7 @@
             this.ClientSize = new System.Drawing.Size(484, 362);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox_custom);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label_veryCustom);
             this.Controls.Add(this.label_custom);
@@ -268,7 +270,7 @@
             this.Name = "Form_InstallationType";
             this.Text = "Setup";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_custom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
@@ -293,7 +295,7 @@
         private System.Windows.Forms.Label label_custom;
         private System.Windows.Forms.Label label_veryCustom;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox_custom;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
     }

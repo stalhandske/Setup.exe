@@ -83,6 +83,7 @@
             this.checkedListBox.Size = new System.Drawing.Size(272, 109);
             this.checkedListBox.TabIndex = 41;
             this.checkedListBox.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_SelectedIndexChanged);
+            this.checkedListBox.SelectedValueChanged += new System.EventHandler(this.checkedListBox_SelectedValueChanged);
             // 
             // label2
             // 
@@ -162,9 +163,9 @@
             this.label_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_description.Location = new System.Drawing.Point(14, 34);
             this.label_description.Name = "label_description";
-            this.label_description.Size = new System.Drawing.Size(146, 13);
+            this.label_description.Size = new System.Drawing.Size(130, 13);
             this.label_description.TabIndex = 35;
-            this.label_description.Text = "The setup wizard will install ...";
+            this.label_description.Text = "Customize your installation";
             // 
             // label_title
             // 
@@ -173,9 +174,9 @@
             this.label_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_title.Location = new System.Drawing.Point(12, 9);
             this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(189, 25);
+            this.label_title.Size = new System.Drawing.Size(162, 25);
             this.label_title.TabIndex = 34;
-            this.label_title.Text = "Welcome to setup ...";
+            this.label_title.Text = "Customize Setup";
             // 
             // label1
             // 
@@ -254,7 +255,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_background);
             this.Controls.Add(this.groupBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_Customize";
             this.Text = "Setup";
             this.groupBox.ResumeLayout(false);

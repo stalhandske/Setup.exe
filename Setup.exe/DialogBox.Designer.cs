@@ -37,10 +37,9 @@
             // 
             // label_text
             // 
-            this.label_text.AutoSize = true;
             this.label_text.Location = new System.Drawing.Point(96, 24);
             this.label_text.Name = "label_text";
-            this.label_text.Size = new System.Drawing.Size(69, 13);
+            this.label_text.Size = new System.Drawing.Size(240, 80);
             this.label_text.TabIndex = 0;
             this.label_text.Text = "addTextHere";
             // 
@@ -75,7 +74,6 @@
             this.Text = "DialogBox";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 
