@@ -32,7 +32,9 @@ namespace Setup.exe
 		public GameManager()
 		{
 			StartGame();
-		}
+
+            PlaySound(global::Setup.exe.Properties.Resources.Windows_Pop_1);
+        }
 
 		public static GameManager Instance => _instance ?? (_instance = new GameManager());
 
@@ -43,7 +45,7 @@ namespace Setup.exe
 			_currentForm = CreateForm(CurrentFormType);
 			_currentForm.Show();
 			_currentForm.SetupUpdateThread();
-		}
+        }
 
 		public void NextEvent()
 		{

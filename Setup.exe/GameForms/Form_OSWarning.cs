@@ -14,8 +14,9 @@ namespace Setup.exe.GameForms
     {
         public Form_OSWarning()
         {
+         
             InitializeComponent();
-           // GameManager.Instance.PlaySound(global::Setup.exe.Properties.Resources.Windows_Pop_1);
+            
         }
 
         private void label_publisher_Click(object sender, EventArgs e)
