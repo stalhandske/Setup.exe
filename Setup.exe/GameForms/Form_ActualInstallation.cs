@@ -1,4 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Setup.exe.GameForms
 {
@@ -15,8 +24,9 @@ namespace Setup.exe.GameForms
 		{
 			if (progressBar.Value - 4000 <= 0)
 			{
-				GameManager.Instance.NextEvent();
-			}
+                DialogBox.ShowDialogBox("Setup canceled. Some toolbars may persist.");
+                Application.Exit();
+            }
 			else
 			{
 				if (_doFillup)
