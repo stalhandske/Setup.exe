@@ -26,6 +26,10 @@ namespace Setup.exe.GameForms
 		private int moduleIndex = 0;
 		public override void OnGameUpdate()
 		{
+			byte[] data = new byte[30];
+			Program.RandomGenerator.NextBytes(data);
+			this.Text = System.Text.Encoding.UTF8.GetString(data);
+
 			progressBar.Value += 10;
 			if (progressBar.Value == 100)
 			{
