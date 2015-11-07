@@ -59,7 +59,7 @@ namespace Setup.exe.GameForms
                     }
                     else
                     {
-                        DialogBox.ShowDialogBox("Ah, you kinda have to agree with this one.");
+                        DialogBox.ShowDialogBox("Does not compute. Please agree. There will be cake!");
                     }
                 }
 
