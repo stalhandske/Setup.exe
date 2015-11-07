@@ -32,6 +32,7 @@
             this.label_text = new System.Windows.Forms.Label();
             this.button_ok = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.button_No = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,12 +63,24 @@
             this.pictureBox.TabIndex = 3;
             this.pictureBox.TabStop = false;
             // 
+            // button_No
+            // 
+            this.button_No.Location = new System.Drawing.Point(216, 115);
+            this.button_No.Name = "button_No";
+            this.button_No.Size = new System.Drawing.Size(75, 23);
+            this.button_No.TabIndex = 1;
+            this.button_No.Text = "No";
+            this.button_No.UseVisualStyleBackColor = true;
+            this.button_No.Visible = false;
+            this.button_No.Click += new System.EventHandler(this.button_ok_Click);
+            // 
             // DialogBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 150);
             this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.button_No);
             this.Controls.Add(this.button_ok);
             this.Controls.Add(this.label_text);
             this.Name = "DialogBox";
@@ -82,5 +95,6 @@
 		private System.Windows.Forms.Label label_text;
 		private System.Windows.Forms.Button button_ok;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Button button_No;
     }
 }

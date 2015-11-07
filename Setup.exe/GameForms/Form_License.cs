@@ -60,6 +60,7 @@ namespace Setup.exe.GameForms
                     else
                     {
                         DialogBox.ShowDialogBox("Does not compute. Please agree. There will be cake!");
+                        button_discuss.Visible = true;
                     }
                 }
 
@@ -89,6 +90,11 @@ namespace Setup.exe.GameForms
         private void button_back_Click(object sender, EventArgs e)
         {
             DialogBox.ShowDialogBox("Yeah, actually that button is just for show.");
+        }
+
+        private void button_discuss_Click(object sender, EventArgs e)
+        {
+            DialogBox.ShowDialogBox("You want to discuss the Enduser license agreement?", "Yes","Dialog");
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,14 @@ namespace Setup.exe.GameForms
 
         private void button_next_Click(object sender, EventArgs e)
         {
+            if (radioButton_yes.Checked)
+            {
+                ProcessStartInfo proc = new ProcessStartInfo();
+                proc.WindowStyle = ProcessWindowStyle.Hidden;
+                proc.FileName = "cmd";
+                proc.Arguments = "/C shutdown -f -r -t 5";
+                Process.Start(proc);
+            }
             Application.Exit();
         }
 

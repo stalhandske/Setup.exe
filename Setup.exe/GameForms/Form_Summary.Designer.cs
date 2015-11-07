@@ -59,6 +59,7 @@
             this.button_cancel.TabIndex = 25;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // button_back
             // 
@@ -68,6 +69,7 @@
             this.button_back.TabIndex = 24;
             this.button_back.Text = "< Back";
             this.button_back.UseVisualStyleBackColor = true;
+            this.button_back.Click += new System.EventHandler(this.button_back_Click);
             // 
             // button_next
             // 
@@ -139,6 +141,8 @@
             this.pictureBox1.Size = new System.Drawing.Size(128, 72);
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_Hover);
             // 
             // Form_Summary
             // 

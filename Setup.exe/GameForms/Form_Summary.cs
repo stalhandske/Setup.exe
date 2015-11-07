@@ -26,5 +26,25 @@ namespace Setup.exe.GameForms
         {
             GameManager.Instance.NextEvent();
         }
+
+        private void button_back_Click(object sender, EventArgs e)
+        {
+            DialogBox.ShowDialogBox("Never gonna give you up, never gonna let you down, never gonna turn around and desert you. Never gonna make you cry, never gonna ...");
+        }
+
+        private void button_cancel_Click(object sender, EventArgs e)
+        {
+            button_cancel.Visible = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Hover(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+        }
     }
 }

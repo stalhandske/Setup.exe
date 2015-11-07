@@ -41,6 +41,7 @@
             this.radioButton_agree = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button_discuss = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,11 +165,23 @@
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
+            // button_discuss
+            // 
+            this.button_discuss.Location = new System.Drawing.Point(336, 264);
+            this.button_discuss.Name = "button_discuss";
+            this.button_discuss.Size = new System.Drawing.Size(112, 23);
+            this.button_discuss.TabIndex = 21;
+            this.button_discuss.Text = "Discuss EULA";
+            this.button_discuss.UseVisualStyleBackColor = true;
+            this.button_discuss.Visible = false;
+            this.button_discuss.Click += new System.EventHandler(this.button_discuss_Click);
+            // 
             // Form_License
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
+            this.Controls.Add(this.button_discuss);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.radioButton_agree);
@@ -204,5 +217,6 @@
         private System.Windows.Forms.RadioButton radioButton_agree;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button_discuss;
     }
 }
