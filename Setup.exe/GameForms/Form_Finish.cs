@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Setup.exe.GameForms
 {
-    public partial class Form_Finish : Form
+    public partial class Form_Finish : GameForm
     {
         public Form_Finish()
         {
